@@ -10,6 +10,12 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    optimizeDeps: {
+      include: ['@headlessui/vue']
+    },
+    ssr: {
+      noExternal: ['@headlessui/vue']
+    }
   },
 
   // Static target (important for GitHub Pages)

@@ -11,6 +11,8 @@
     "deploy": "gh-pages -d .output/public"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.23",
+    "@heroicons/vue": "^2.2.0",
     "@nuxt/content": "^3.5.1",
     "@nuxt/eslint": "^1.4.1",
     "@nuxt/fonts": "^0.11.4",
