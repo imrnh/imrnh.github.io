@@ -16,7 +16,8 @@
 
 
 <template>
-    <header class="relative z-50 bg-white mt-7 custom_font_setup_for_header">
+    <header class="relative z-50 bg-white mt-7 custom_font_setup_for_header"
+        style="background-color: #F4F4F4; opacity: 96.47%;">
         <nav class="w-full flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -31,7 +32,6 @@
                 @click="mobileMenuOpen = true" aria-label="Open menu">
                 <Bars3Icon class="h-6 w-6" aria-hidden="true" />
             </button>
-
 
 
 
@@ -53,7 +53,8 @@
                         leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
 
                         <teleport to="body">
-                            <PopoverPanel class="fixed inset-0 z-40 w-full h-[600px] bg-white shadow-lg">
+                            <PopoverPanel class="fixed inset-0 z-40 w-full h-[600px] bg-white shadow-lg"
+                                style="background-color: #F4F4F4; opacity: 96.47%; transition: 50ms;">
                                 <div class="p-10 text-2xl text-gray-900">
 
                                     <!-- Content of about us will be here. -->
