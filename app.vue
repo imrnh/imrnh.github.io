@@ -1,6 +1,6 @@
 <!-- app.vue -->
 <template>
-  <div class="container mx-auto" style="padding-left: 2.5%; padding-right: 2.5%;">
+  <div class="mx-auto max-w-[1536px] lg:px-[6%] px-[10px]">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
