@@ -3,12 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d .output/public"
+    "deploy": "gh-pages -d dist",
+    "build": "nuxt build --preset github_pages",
+    "generate": "nuxt build --preset github_pages"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",

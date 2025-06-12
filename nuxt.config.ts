@@ -2,10 +2,25 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  // Basic configuration
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+  ssr: true,
+
+  // CSS configuration
   css: ['~/assets/css/main.css'],
 
+  // App configuration (important for static deployment)
+  app: {
+    baseURL: '/', // Correct for username.github.io deployment
+    buildAssetsDir: '/_nuxt/',
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    }
+  },
+
+  // Vite configuration
   vite: {
     plugins: [
       tailwindcss(),
@@ -18,17 +33,15 @@ export default defineNuxtConfig({
     }
   },
 
-  // Static target (important for GitHub Pages)
-  ssr: true,
+  // Static generation configuration - Updated for GitHub Pages
   nitro: {
-    preset: 'static'
+    preset: 'github_pages', // Use GitHub Pages preset
+    output: {
+      publicDir: '.output/public'
+    }
   },
 
-  // Set base path if you're deploying to GitHub project page (e.g., github.com/username/repo-name)
-  router: {
-    base: 'https://imrnh.github.io' // Replace with your actual repo name
-  },
-
+  // Modules
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
@@ -36,7 +49,10 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/fonts',
     '@nuxt/eslint',
-    '@nuxt/test-utils',
-    '@nuxt/scripts'
-  ]
+  ],
+
+  // Development server
+  devServer: {
+    port: 3000
+  }
 })
