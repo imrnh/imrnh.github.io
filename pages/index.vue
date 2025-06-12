@@ -18,7 +18,7 @@
 
         <div class="w-full flex flex-wrap justify-center sm:justify-between">
             <FeaturedReserchCardWithVideo videoUrl="/sample-video.mp4"
-                thumbnail="/assets/images/pexels-googledeepmind-25626428.jpg"
+                thumbnail="/assets/images/pexels-googledeepmind-18069494.jpg"
                 overlayText="Extensive experimental results demonstrate that expressive instructions are crucial to instruction-based." />
 
             <ResearchCard label="Perception"
