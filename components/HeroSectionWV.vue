@@ -18,7 +18,7 @@
         <div v-show="!(isPlaying && !isMobile)" class="transition-all duration-300" :class="[
             isMobile
                 ? 'relative mt-4 w-full rounded-none'
-                : 'absolute bottom-[67px] left-[76px] rounded-[15px] p-4 xl:p-6 w-[50%]',
+                : 'absolute bottom-[60px] left-[70px] rounded-[15px] p-4 xl:p-6 w-[47%]',
             !isMobile ? 'bg-white/65' : '',
         ]">
             <h3 class="font-bold"
