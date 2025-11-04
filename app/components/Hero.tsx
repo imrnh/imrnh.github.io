@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => (
@@ -26,18 +27,31 @@ const Hero = () => (
         <br></br>
 
 
-        <p className="text-lg md:text-xl text-gray-600" style={{ fontFamily: 'var(--font-ibm)', fontSize: '17px', color: '#181818' }}>
-            Foundation vision models are made to adapt to a diverse set of tasks and are expensive for fine-tuning and inference. I've practical experiense and academic research experiense at distilling knowledge from foundation models to build smaller vision models
-            that outperform foundation model with fraction of training infrastructure cost and fewer training data. 
-            <div style={{ width: '1px', height: '15px' }}></div>2 of my AI startups had 1000+ active users combined and as a solopreneur, I was responsible for design to developement to marketing of these products and optimizing the system to pay minimal cloud bill. 
-            I also have 1 year of experiense as a freelance computer vision engineer, building efficient data intensive systems for production. 
-            <div style={{ width: '1px', height: '15px' }}></div>I've developed (first-authored, academic research) a vision transformer interpretability method called <font color="orange"><b><i>F2HF</i></b></font> &nbsp;that is currently the state-of-the-art, widely adopted by industry and accepted in IEEE conference.
-            <div style={{ width: '1px', height: '15px' }}></div>Combining these practical exprience with my academic research experiense, I hold the ability to build and deploy ML based vision pipeline that are cost effective, and get the job done.
-        </p>
+        <div className="text-lg md:text-xl text-gray-600" style={{ fontFamily: 'var(--font-ibm)', fontSize: '17px', color: '#181818' }}>
+            {/* <h3 style={{marginTop: '-20px', marginBottom: '10px', fontSize: '20px', fontWeight: '900', color: 'red', fontFamily: 'var(--font-mw)'}}>Why me?</h3> */}
+            {/* <ul className="list-disc pl-5"> */}
+                {/* <li> */}
+                I have Practical and academic research experiense at distilling knowledge from foundation models to build <font color="orange"><i>smaller vision models</i></font>&nbsp;
+                    that outperform foundation model with fraction of training infrastructure cost and fewer training data.  
+                    {/* </li> */}
+            {/* <li style={{marginTop: "8px" }}> */}
+            &nbsp; Built vision and language pipeline for 2 AI startups with <font color="orange"><i>1000+ active users</i></font>, optimizing the system for minimal infernece bill.
+            {/* </li> */}
+                {/* <li style={{ marginTop: "8px" }}> */}
+                    1 year of experiense as a freelance computer vision engineer. 
+            {/* </li> */}
+                {/* <li style={{ marginTop: "8px", marginBottom: '10px' }}> */}
+                    Made (first-authored, academic research) a vision transformer interpretability method ( <font color="orange"><i>F2HF</i></font> ) &nbsp;that is currently the state-of-the-art, widely adopted by industry and accepted in IEEE conference. 
+                    {/* </li> */}
+            {/* </ul> */}
+            With proven academic research and practical experience, I hold the ability to build and deploy ML based vision pipeline that are cost effective, and get the job done.
 
-        <button className="mt-9 px-9 py-4 bg-red-500 text-white font-semibold rounded-full shadow-lg hover:bg-red-800 transition-colors duration-300" style={{cursor: 'pointer'}}>
-            Contact Me
-        </button>
+        </div>
+
+       <Link href="/google">
+            <button className="mt-9 px-9 py-4 bg-red-500 text-white font-semibold rounded-full shadow-lg hover:bg-red-800 transition-colors duration-300" style={{ cursor: 'pointer' }}>
+                Contact Me
+            </button></Link>
 
         <button className="mt-9 ml-5 px-9 py-4 bg-white-500 text-black font-semibold rounded-full shadow-lg hover:bg-gray-300 transition-colors duration-300" style={{ cursor: 'pointer' }}>
             Download CV
