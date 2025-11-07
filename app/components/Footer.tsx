@@ -7,7 +7,7 @@ const Footer = () => (
         <p className="font-mono text-sm">
             &copy; {new Date().getFullYear()} Imran Hossen. All rights reserved.
         </p>
-        <p className="text-xs mt-2">
+        {/* <p className="text-xs mt-2">
             Built with{" "}
             <a href="https://nextjs.org" className="hover:text-gray-900">
                 Next.js
@@ -17,7 +17,7 @@ const Footer = () => (
                 Tailwind CSS
             </a>
             .
-        </p>
+        </p> */}
     </footer>
 );
 

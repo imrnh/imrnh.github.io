@@ -2,30 +2,37 @@
 
 import React from "react";
 import Card from "./Card";
+import './css/card.css';
 
 const ClientProjects = () => {
     const projects = [
         {
-            title: "E-Commerce Platform for StudioX",
-            description: "A bespoke Shopify Plus integration for a luxury brand.",
-            imageUrl: "https://placehold.co/600x400/2a2a4a/9090f0?text=Project+1",
+            title: "Tennis Player analysis software",
+            description: "From a tennis match, extract each serve type (flat / kick / slice), ball impact & bounce location, serve success (let/in/out) and few more serve parameters.",
+            imageUrl: "https://raw.githubusercontent.com/imrnh/tennis_player_analysis/refs/heads/main/bin/presentation/project_demonstration.gif",
+            href: '/pj/tennis'
         },
         {
-            title: "SaaS Dashboard for FinTech Co.",
-            description: "Data visualization and user management dashboard.",
-            imageUrl: "https://placehold.co/600x400/4a2a2a/f09090?text=Project+2",
+            title: "Vilt - Virtual Try on App",
+            description: "A virtual try-on application with backend and the serverless models.",
+            imageUrl: "https://raw.githubusercontent.com/imrnh/vilt/refs/heads/main/bin/presentation/1.png",
+            href: '/pj/vilt'
         },
-        {
-            title: "Marketing Site for non-profit",
-            description: "Accessible and fast website built with Astro and Sanity.",
-            imageUrl: "https://placehold.co/600x400/2a4a2a/90f090?text=Project+3",
-        },
+        // {
+        //     title: "Feature based Style Transfer App",
+        //     description: "Style transfer between 2 images with Feature extraction - Not using Neural Network.",
+        //     imageUrl: "https://raw.githubusercontent.com/imrnh/classical_style_transfer/main/images/output/generated_output.png",
+        //     href: '/pj/st'
+        // },
     ];
 
     return (
-        <section id="projects" className="py-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Client Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section id="projects" className="py-10">
+            <center>
+                <h2 className="text-4xl font-bold text-gray-900 mb-20" style={{ fontFamily: 'var(--font-mw)' }}>Client Projects</h2>
+            </center>
+
+            <div id="project_card" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {projects.map((project) => (
                     <Card key={project.title} {...project} />
                 ))}

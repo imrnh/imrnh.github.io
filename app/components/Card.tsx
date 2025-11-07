@@ -15,9 +15,11 @@ const Card = ({
 }) => (
     <a
         href={href || "#"}
-        className="group block rounded-lg overflow-hidden bg-transparent hover:bg-gray-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 border border-gray-200"
+        className="group block rounded-lg overflow-hidden bg-transparent hover:bg-gray-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
     >
-        <div className="relative w-full h-40">
+        <div className="relative w-full h-70" 
+            style={{ borderRadius: '15px' }}
+        >
             <img
                 src={imageUrl}
                 alt={title}
@@ -27,10 +29,12 @@ const Card = ({
                         "https://placehold.co/600x400/f0f0f0/999999?text=Image";
                     e.currentTarget.onerror = null;
                 }}
+                style={{ borderRadius: '15px' }}
+
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
         </div>
-        <div className="p-5">
+        <div className="pt-5">
             <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-indigo-600 transition-colors">
                 {title}
             </h3>

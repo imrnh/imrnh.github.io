@@ -6,39 +6,29 @@ import { BookOpen } from "lucide-react";
 const ResearchPapers = () => {
     const papers = [
         {
-            title: "The Impact of Perceived Web Performance on User Engagement",
-            authors: "A. Name, B. Coauthor, C. Advisor",
-            journal: "ACM Transactions on the Web (TWEB), 2023",
-            href: "#",
-        },
-        {
-            title: "A Novel Framework for State Management in Declarative UIs",
-            authors: "A. Name, D. Researcher",
-            journal: "IEEE Symposium on Visual Languages (VL/HCC), 2022",
-            href: "#",
-        },
-        {
-            title:
-                "Generating Accessible Color Palettes via Evolutionary Algorithms",
-            authors: "E. Designer, A. Name",
-            journal: "Conference on Human Factors in Computing (CHI), 2021",
+            title: "F2HF: Feed Forward Network as a Noisy Head Filter in Vision Transformer Explanation",
+            authors: "Imran Hossen, Kazi Saeed Alam",
+            journal: "ICCIT, 2026",
             href: "#",
         },
     ];
 
     return (
-        <section id="papers" className="py-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Research Papers</h2>
+        <section id="papers" className="py-20">
+            <center>
+                <h2 className="text-4xl font-bold text-black mb-8" style={{ fontFamily: 'var(--font-mw)' }}>Research Papers</h2>
+            </center>
+            <br></br>
             <div className="space-y-6">
                 {papers.map((paper) => (
                     <a
                         key={paper.title}
                         href={paper.href}
-                        className="group block p-5 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
+                        className="group block p-0 rounded-lg transition-colors"
                     >
                         <div className="flex justify-between items-start">
                             <div>
-                                <h3 className="text-lg font-medium text-gray-800 group-hover:text-indigo-600 transition-colors">
+                                <h3 className="text-md font-medium text-black group-hover:text-indigo-600 transition-colors" style={{ fontFamily: 'var(--font-ibm)' }}>
                                     {paper.title}
                                 </h3>
                                 <p className="text-sm text-gray-600 mt-1">{paper.authors}</p>

@@ -18,11 +18,11 @@ const Navbar = () => {
             {/* Logo / Name */}
             <div className="flex items-center gap-3">
                 <img
-                    src="https://avatars.githubusercontent.com/u/57320222?s=400&u=7692262b8cb410ba3364c8d32b08e01ae7770dff&v=4"
+                    src="https://avatars.githubusercontent.com/u/57320222?s=400&u=8ef7930dfe204b945953f92e032622c61974898f&v=4"
                     alt="Imran Hossen"
                     className="w-10 h-10 rounded-full border-0 border-gray-300"
                 />
-                <span className="font-medium text-lg text-gray-900">
+                <span className="font-medium text-lg text-gray-900" style={{ fontFamily: 'var(--font-inter)'}}>
                     Imran Hossen
                 </span>
             </div>

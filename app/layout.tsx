@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, IBM_Plex_Sans, Lora, Merriweather } from "next/font/google";
+import { Geist, Geist_Mono, Inter, IBM_Plex_Sans, Lora, Merriweather, Cascadia_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -35,6 +35,11 @@ const mw = Merriweather({
 });
 
 
+const cascadia = Cascadia_Mono({
+  variable: "--font-cascadia-mono",
+  subsets: ["latin"],
+});
+
 
 export const metadata: Metadata = {
   title: "Imran Hossen | Portfolio",
@@ -49,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${IBMPlexSans.variable} ${lora.variable} ${inter.variable} ${mw.variable} antialiased bg-white text-gray-900 min-h-screen font-sans`}
+        className={`${geistSans.variable} ${geistMono.variable} ${IBMPlexSans.variable} ${lora.variable} ${inter.variable} ${mw.variable} ${cascadia.variable} antialiased bg-white text-gray-900 min-h-screen font-sans`}
       >
         <div className="max-w-6xl mx-auto px-6">
           <Navbar />
