@@ -10,13 +10,13 @@ const ClientProjects = () => {
             title: "Tennis Player analysis software",
             description: "From a tennis match, extract each serve type (flat / kick / slice), ball impact & bounce location, serve success (let/in/out) and few more serve parameters.",
             imageUrl: "https://raw.githubusercontent.com/imrnh/tennis_player_analysis/refs/heads/main/bin/presentation/project_demonstration.gif",
-            href: '/pj/tennis'
+            href: 'https://github.com/imrnh/tennis_player_analysis'
         },
         {
             title: "Vilt - Virtual Try on App",
             description: "A virtual try-on application with backend and the serverless models.",
             imageUrl: "https://raw.githubusercontent.com/imrnh/vilt/refs/heads/main/bin/presentation/1.png",
-            href: '/pj/vilt'
+            href: 'https://github.com/imrnh/vilt.git'
         },
         // {
         //     title: "Feature based Style Transfer App",
