@@ -1,0 +1,56 @@
+1:"$Sreact.fragment"
+2:I[91397,["/_next/static/chunks/1c8935cb71d5ebcf.js","/_next/static/chunks/71168b994b248471.js"],"default"]
+4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+3:Tbbf,# Tennis Serve Extraction and Analysis 
+
+<!-- ![Demo](bin/project_demonstration.gif) -->
+<center>
+<img src="https://raw.githubusercontent.com/imrnh/tennis_player_analysis/main/bin/presentation/project_demonstration.gif" alt="Demo" height="400">
+
+or watch the video here: https://youtu.be/53Lz9B7wAYQ
+
+</center>
+
+
+
+### Extracted the following informations:
+
+From a tennis gameplay video, 
+
+1) Identify a serve and extract the type for each of the serves (Flat / Kick / Slice) 
+2) Determine the success of the Serve (in/out/let)
+3) Calculate *toss height*, *toss position*, *hit height*, *serve speed* and *player speed*.
+
+# Worflow
+1) Firstly, a ConvNet network was trained to extract 14 marker points in the court. These 14 marker points are then connected as following to build the board:
+    0 → 4, 4 → 6, 6 → 1, 0 → 2, 1 → 3, 4 → 8, 2 → 5, 8 → 10, 10 → 5, 9 → 11, 6 → 9, 11 → 7, 12 → 13, 5 → 7, 7 → 3, 10 → 13, 13 → 11, 8 → 12, 12 → 9
+
+    <br>
+    <center><img src="https://raw.githubusercontent.com/imrnh/tennis_player_analysis/main/bin/presentation/picture_court_processed.png" width="700"></center>
+    <br><br>
+2) Another YOLO model detects the players, the ball and the net of the game. Net detection is nedded to identify if a server is **Let** or not. **Mediapipe** is used to identify the player pose for each detected players. Also, a *face recognizer ConvNet* has been trained to identify players of both side. 
+
+3) These players will be tracked throughout the match even if they switch side or camera moves to the audience and return back.
+
+4) For understanding serve type, a **ConvNet + Transformer** architecture has been used. Another ConvNet network (Gate Logic) tracks ball and player trajectory to understand when a serve started and when a serve finished. This ensure that we keep track of only the current recordings of a serve and previous serve data cannot intervine the output of the present serve data. Therefore, it is a gated Transformer architecture where a custom gate is used with CNN. This is the complete architecture of the game analysis module made with 2 CNN and 1 transformer network.
+
+<center>
+<img src="https://github.com/imrnh/tennis_player_analysis/raw/main/bin/presentation/tennis_game_analysis_module.png" width="90%">
+<br>Fig: Game analysis module 
+</center>
+
+
+
+# Infernece
+You can either run the whole pipeline to get the stats of a player. Or you can separetely run each of the step in workflow. We will start with seperate workflow first. If you need to run the whole pipeline at once, please check the bottom of the file.
+
+
+The segmented video is used to train the model and then inference from it. This helps the model to only focus on relevant information and hence drastically reduces the data requirements. The following comamnd generates the segmented output.
+
+```bash
+!python make_segmentation.py \
+  --input bin/data/inference/tennis_play_record_1_short_v2.mp4 \
+  --output bin/data/output_segmented_video.avi
+```0:{"buildId":"hpq7f_F-I4gD8yKufEBGu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"content":"$3"}],[["$","script","script-0",{"src":"/_next/static/chunks/71168b994b248471.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+6:null

@@ -1,6 +1,10 @@
 1:"$Sreact.fragment"
-2:I[82152,["/_next/static/chunks/1c8935cb71d5ebcf.js","/_next/static/chunks/87cc72fb6507ebc1.js"],"default"]
-3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"QmU38MSpf6_dpQqntv2hF","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"py-16","children":[["$","center",null,{"children":["$","h2",null,{"className":"text-4xl font-bold text-gray-900 mb-8","style":{"fontFamily":"var(--font-mw)"},"children":"Client Projects"}]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6","children":[["$","$L2","/projects/first-post",{"title":"first post","description":"Read this blog","imageUrl":"https://placehold.co/600x400?text=Blog","href":"/projects/first-post"}],["$","$L2","/projects/second-post",{"title":"System Design for AI-based Photo Editor","description":"Designing an AI-based photo editor","imageUrl":"https://fujiframe.com/assets/images/_3000x2000_fit_center-center_85_none/10085/xhs2-fuji-70-300-Amazilia-Hummingbird.webp","href":"/projects/second-post"}]]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/87cc72fb6507ebc1.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
-5:null
+2:I[47257,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"ClientPageRoot"]
+3:I[39012,["/_next/static/chunks/1c8935cb71d5ebcf.js","/_next/static/chunks/7157c397f185c890.js"],"default"]
+6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+:HL["/_next/static/chunks/764720f2f809903a.css","style"]
+0:{"buildId":"hpq7f_F-I4gD8yKufEBGu","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/764720f2f809903a.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/7157c397f185c890.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
