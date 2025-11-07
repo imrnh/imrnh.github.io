@@ -22,9 +22,6 @@ const nextConfig: NextConfig = {
 
   // Recommended for cleaner URLs and proper static routing
   trailingSlash: true,
-
-  basePath: isProd ? "/portfolio" : "",
-  assetPrefix: isProd ? "/portfolio/" : "",
 };
 
 export default nextConfig;
