@@ -12,7 +12,8 @@ const Hero = () => (
         {/* assuming 100px is the navbar size */}
 
 
-
+        <br></br>
+<br></br>
         <p className="font-mono text-lg text-red-500 mb-4">
             Hello, I'm Imran Hossen
         </p>
@@ -25,15 +26,14 @@ const Hero = () => (
             <span className="bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent underline underline-offset-[10px] decoration-2 decoration-red-500">
                 early-stage startups
             </span>{" "}
-            to{" "}
+            to cut{" "}
             <span className="bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent underline underline-offset-[10px] decoration-2 decoration-red-500">
-                cut compute costs
+                 compute costs
             </span>
             .
         </h1>
 
         <br></br>
-
 
         <div className="text-lg md:text-xl text-gray-600" style={{ fontFamily: 'var(--font-ibm)', fontSize: '15px', color: '#181818' }}>
             {/* <h3 style={{marginTop: '-20px', marginBottom: '10px', fontSize: '20px', fontWeight: '900', color: 'red', fontFamily: 'var(--font-mw)'}}>Why me?</h3> */}
@@ -63,15 +63,46 @@ const Hero = () => (
             With proven academic research and practical experience, I hold the ability to build and deploy ML based vision pipeline that are cost effective, and get the job done.
         </div>
 
-<div style={{width: '1px', height: '20px'}}></div>
-       <Link href="/google">
-            <button className="mt-9 px-7 py-3 bg-red-500 text-white font-semibold rounded-full shadow-lg hover:bg-red-800 transition-colors duration-300" style={{ cursor: 'pointer' }}>
-                Contact Me
-            </button></Link>
+<div style={{width: '1px', height: '40px'}}></div>
+<center>
+            <a href="mailto:mail@imranhossen.org">
+                <button
+                    className="mt-9 px-7 py-3 bg-red-500 text-white font-semibold rounded-full hover:bg-red-800 transition-colors duration-300"
+                    style={{ cursor: 'pointer', fontFamily: 'var(--font-ibm)' }}
+                >
+                    Email Me
+                </button>
+            </a>
 
+            <a href="https://www.linkedin.com/in/imrnh/" target="_blank" rel="noopener noreferrer">
+                <button
+                    className="mt-9 ml-8 px-1 py-2 text-blue-700 font-semibold rounded-full transition-colors duration-300 hover:text-blue-800"
+                    style={{ cursor: 'pointer', fontFamily: 'var(--font-ibm)' }}
+                >
+                    <span
+                        style={{
+                            textDecoration: 'underline',
+                            textUnderlineOffset: '5px',
+                            textDecorationThickness: '1px', // ensures underline stays visible
+                        }}
+                    >
+                        Contact via Linkedin
+                    </span>
+                </button>
+            </a>
+
+
+</center>
+
+{/* 
         <button className="mt-9 ml-8 px-7 py-3 hover:text-gray-700 text-black font-semibold rounded-full  transition-colors duration-300" style={{ cursor: 'pointer' }}>
             Download CV
-        </button>
+        </button> */}
+
+        <br></br>
+        <br></br>
+        <br></br>
+
     </section>
 );
 

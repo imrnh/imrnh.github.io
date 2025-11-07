@@ -6,7 +6,7 @@ import html from "remark-html";
 import MarkdownRenderer from "@/app/components/MarkdownRenderer";
 
 export async function generateStaticParams() {
-    const dir = path.join(process.cwd(), "public/blogs");
+    const dir = path.join(process.cwd(), "public/projects");
     const files = fs.readdirSync(dir);
     return files.map(file => ({ slug: file.replace(/\.md$/, "") }));
 }
@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 export default async function BlogPage(props: { params: Promise<{ slug: string }> }) {
     const { slug } = await props.params;
 
-    const filePath = path.join(process.cwd(), "public/blogs", `${slug}.md`);
+    const filePath = path.join(process.cwd(), "public/projects", `${slug}.md`);
     const fileContent = fs.readFileSync(filePath, "utf-8");
 
     // ✅ Get BOTH data and content from the file
