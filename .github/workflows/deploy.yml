@@ -3,10 +3,10 @@ name: Deploy Next.js Static Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Runs whenever you push to main
+      - main  # Deploy whenever you push to main
 
 permissions:
-  contents: write  # Needed to push to gh-pages branch
+  contents: write  # Required to push to gh-pages branch
 
 jobs:
   build-and-deploy:
