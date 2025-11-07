@@ -59,7 +59,7 @@ export default function RootLayout({
         <div className="max-w-6xl mx-auto px-6">
           <Navbar />
           <main>{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>

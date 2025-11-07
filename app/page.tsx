@@ -9,9 +9,9 @@ export default function HomePage() {
       <Hero />
 
 
-      <ClientProjects />
+      {/* <ClientProjects /> */}
 
-      <ResearchPapers />
+      {/* <ResearchPapers /> */}
 
       {/* <FeaturedPosts /> */}
     </>

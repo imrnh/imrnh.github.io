@@ -3,7 +3,7 @@
 import React from "react";
 
 const Footer = () => (
-    <footer className="py-16 text-center text-gray-500 border-t border-gray-200">
+    <footer className="text-center text-gray-500" style={{height: '50px'}}>
         <p className="font-mono text-sm">
             &copy; {new Date().getFullYear()} Imran Hossen. All rights reserved.
         </p>

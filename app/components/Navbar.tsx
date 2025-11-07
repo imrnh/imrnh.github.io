@@ -7,9 +7,9 @@ import { Github, Linkedin } from "lucide-react";
 const Navbar = () => {
     const navItems = [
         { name: "01 home", href: "/" },
-        { name: "02 papers", href: "/#papers" },
-        { name: "03 projects", href: "/#projects" },
-        { name: "04 writing", href: "/#posts" },
+        { name: "02 projects", href: "/#projects" },
+        { name: "03 research", href: "/#papers" },
+        { name: "04 blog", href: "/blogs" },
         { name: "05 open-source", href: "/#opensource" },
     ];
 
@@ -28,13 +28,13 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-8">
                 {navItems.map((item) => (
                     <Link
                         key={item.name}
                         href={item.href}
                         scroll={false} // prevents full-page reload / jump
-                        className="font-mono text-sm text-gray-500 hover:text-gray-900 transition-colors"
+                        className="font-mono text-sm text-gray-700 hover:text-gray-900 transition-colors"
                     >
                         {item.name}
                     </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"
-                    className="p-2 text-gray-500 hover:text-gray-900 transition-colors"
+                    className="p-2 text-black hover:text-gray-900 transition-colors"
                 >
                     <Github size={18} />
                 </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="p-2 text-gray-500 hover:text-gray-900 transition-colors"
+                    className="p-2 text-blue-900 hover:text-gray-900 transition-colors"
                 >
                     <Linkedin size={18} />
                 </a>

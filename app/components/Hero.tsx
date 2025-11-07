@@ -4,7 +4,15 @@ import Link from "next/link";
 import React from "react";
 
 const Hero = () => (
-    <section className="py-10 md:pt-32 md:pb-20">
+    
+    <section
+        className="py-10 md:pt-32 md:pb-20"
+        style={{ width: '100%', height: 'calc(100vh - 60px - 100px)' }} 
+    >
+        {/* assuming 100px is the navbar size */}
+
+
+
         <p className="font-mono text-lg text-red-500 mb-4">
             Hello, I'm Imran Hossen
         </p>
