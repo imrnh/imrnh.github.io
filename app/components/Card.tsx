@@ -15,7 +15,7 @@ const Card = ({
 }) => (
     <a
         href={href || "#"}
-        className="group block rounded-lg overflow-hidden bg-transparent hover:bg-gray-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+        className="group block rounded-lg overflow-hidden bg-transparent transition-all duration-300 ease-in-out transform hover:-translate-y-1"
     >
         <div className="relative w-full h-70" 
             style={{ borderRadius: '15px' }}

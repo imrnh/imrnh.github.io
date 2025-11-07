@@ -56,7 +56,7 @@ export default function MarkdownRenderer({ content }: { content: string }) {
     };
 
     return (
-        <article className="mx-auto p-6 max-w-4xl">
+        <article>
             <ReactMarkdown
                 rehypePlugins={[rehypeRaw]}
                 components={components}

@@ -24,7 +24,7 @@ export default function BlogsList() {
     return (
         <section className="py-16">
             <center>
-                <h2 className="text-4xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'var(--font-mw)' }}>
+                <h2 className="text-4xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'var(--font-ibm)' }}>
                     All Blogs
                 </h2>
             </center>
