@@ -6,16 +6,17 @@ import { Github, Linkedin } from "lucide-react";
 
 const Navbar = () => {
     const navItems = [
-        { name: "01 home", href: "/" },
-        { name: "02 projects", href: "/projects" },
-        { name: "03 research", href: "/papers" },
-        { name: "04 blog", href: "/blogs" },
-        // { name: "05 open-source", href: "/#opensource" },
+        // { name: "01 home", href: "/" },
+        { name: "01 projects", href: "/projects" },
+        { name: "02 research", href: "/papers" },
+        { name: "03 blog", href: "/blogs" },
+        // { name: "04 open-source", href: "/opensource" },
     ];
 
     return (
         <nav className="flex flex-wrap items-center justify-between w-full py-8">
             {/* Logo / Name (Mobile: Row 1 Left, Desktop: Row 1 Left) */}
+            <a href="/">
             <div className="flex items-center gap-3 order-1">
                 <img
                     src="https://avatars.githubusercontent.com/u/57320222?s=400&u=8ef7930dfe204b945953f92e032622c61974898f&v=4"
@@ -29,6 +30,7 @@ const Navbar = () => {
                     Imran Hossen
                 </span>
             </div>
+            </a>
 
             {/* Navigation Links (Mobile: Row 2, Desktop: Row 1 Center) */}
             <div className="w-full md:w-auto order-3 md:order-2 flex items-center justify-center gap-6 md:gap-8 mt-4 md:mt-0">
