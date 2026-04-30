@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: Projects · Frédéric Berdoz
+---
+<div class="article-header">
+    <h1>Projects</h1>
+    <p class="text-dim">Research projects on AI alignment, LLM reasoning, and more.</p>
+</div>
+<div class="project-grid">
+    {% for project in collections.projects | reverse %}
+    <a class="project-card" href="{{ project.url }}">
+        <div class="project-card-thumb">
+            {% if project.data.image %}
+            <img src="{{ project.data.image }}" alt="{{ project.data.title }}">
+            {% endif %}
+        </div>
+        <div class="project-card-body">
+            <h3>{{ project.data.title }}</h3>
+            <div class="meta">{{ project.data.subtitle }}</div>
+            <div class="tldr">{{ project.data.tldr }}</div>
+            <div class="tags">
+                {% for tag in project.data.tags %}
+                    {% if tag != "projects" %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>

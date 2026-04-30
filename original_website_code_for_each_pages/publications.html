@@ -1,0 +1,617 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Publications · Frédéric Berdoz</title>
+    <meta name="description" content="Personal website of Frédéric Berdoz — PhD student at ETH Zürich">
+    <link rel="icon" href="https://fberdoz.github.io/img/favicon_fb.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fberdoz.github.io/css/main.min.f53399127e251b498e94bce3e0a63dd6f9dbe4ac4dc9237dd23e9ae881f1464e.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+        integrity="sha384-zh0CIslj3FnGCnGkjhM0JEQXx2kFIQICxTKZeEBOp1MNYhOKkMnGGBpqBB1WYqb" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <nav class="nav">
+            <div class="container"><a class="nav-brand" href="/">~/fberdoz</a>
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span></button>
+                <div class="nav-links" id="nav-links"><a href="/">Home</a>
+                    <a href="/publications/" class="active">Publications</a>
+                    <a href="/teaching/">Teaching</a>
+                    <a href="/research-notes/">Research</a>
+                    <a href="/projects/">Projects</a>
+                    <a href="/cv/">CV</a>
+                    <a href="/newsletter/">AI Intel</a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀</button>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="article-header">
+                    <h1>Publications</h1>
+                    <p class="text-dim">13 publications</p>
+                </div>
+                <section class="pub-year-section">
+                    <h2 class="pub-year">2026</h2>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Reasoning Structure of Large Language Models</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, L. A. Lanzendörfer, F. Farestam, R.
+                            Wattenhofer
+                            · Logical Reasoning of LLMs Workshop @ ICLR</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--project"
+                                href="/projects/structure-llm-reasoning/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@misc{berdoz2026reasoning,
+  author = {Berdoz, F. and Lanzend{\"o}rfer, L. A. and Farestam, F. and Wattenhofer, R.},
+  title = {{Reasoning Structure of Large Language Models}},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Subliminal Signals in Preference Labels</h3>
+                        <div class="pub-meta">I. Magistrali, <strong>F. Berdoz</strong>, S. Dauncey, R. Wattenhofer
+                            · Agents in the Wild Workshop @ ICLR</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://openreview.net/forum?id=YnEIr2ZekL" target="_blank"
+                                rel="noopener">Paper</a>
+                            <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2603.01204"
+                                target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/subliminal-preferences/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">As AI systems approach superhuman capabilities, scalable oversight
+                                increasingly relies on LLM-as-a-judge frameworks where models evaluate and guide each
+                                other’s training. A core assumption is that binary preference labels provide only
+                                semantic supervision about response quality. We challenge this assumption by
+                                demonstrating that preference labels can function as a covert communication channel. We
+                                show that even when a neutral student model generates semantically unbiased completions,
+                                a biased judge can transmit unintended behavioral traits through preference assignments,
+                                which even strengthen across iterative alignment rounds. Our findings suggest that
+                                robust oversight in superalignment settings requires mechanisms that can detect and
+                                mitigate subliminal preference transmission, particularly when judges may pursue
+                                unintended objectives.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@misc{magistrali2026subliminal,
+  author = {Magistrali, I. and Berdoz, F. and Dauncey, S. and Wattenhofer, R.},
+  title = {{Subliminal Signals in Preference Labels}},
+  note = {Accepted at Agents in the Wild Workshop, ICLR 2026. arXiv:2603.01204},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Can AI Agents Agree?</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, L. Rugli, R. Wattenhofer
+                            · Preprint</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--arxiv"
+                                href="https://arxiv.org/abs/2603.01213" target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/can-agents-agree/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Large language models are increasingly deployed as cooperating
+                                agents, yet their behavior in adversarial consensus settings has not been systematically
+                                studied. We evaluate LLM-based agents on a Byzantine consensus game over scalar values
+                                using a synchronous all-to-all simulation. We test consensus in a no-stake setting where
+                                agents have no preferences over the final value, so evaluation focuses on agreement
+                                rather than value optimality. Across hundreds of simulations spanning model sizes, group
+                                sizes, and Byzantine fractions, we find that valid agreement is not reliable even in
+                                benign settings and degrades as group size grows. Introducing a small number of
+                                Byzantine agents further reduces success. Failures are dominated by loss of liveness,
+                                such as timeouts and stalled convergence, rather than subtle value corruption. Overall,
+                                the results suggest that reliable agreement is not yet a dependable emergent capability
+                                of current LLM-agent groups even in no-stake settings, raising caution for deployments
+                                that rely on robust coordination.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@misc{berdoz2026can,
+  author = {Berdoz, F. and Rugli, L. and Wattenhofer, R.},
+  title = {{Can AI Agents Agree?}},
+  note = {arXiv:2603.01213},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Reasoning Boosts Opinion Alignment in LLMs</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, Y. Billeter, Y. Vonlanthen, R. Wattenhofer
+                            · ICLR</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://openreview.net/forum?id=mdunHhVDPz" target="_blank"
+                                rel="noopener">Paper</a>
+                            <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2603.01214"
+                                target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project"
+                                href="/projects/reasoning-boosts-alignment/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Opinion modeling aims to capture individual or group political
+                                preferences, enabling applications such as digital democracies, where models could help
+                                shape fairer and more popular policies. Given their versatility, strong generalization
+                                capabilities, and demonstrated success across diverse text-to-text applications, large
+                                language models (LLMs) are natural candidates for this task. However, due to their
+                                statistical nature and limited causal understanding, they tend to produce biased
+                                opinions when prompted naively. In this work, we study whether reasoning can improve
+                                opinion alignment. Motivated by the recent advancement in mathematical reasoning enabled
+                                by reinforcement learning (RL), we train models to produce profile-consistent answers
+                                through structured reasoning. We evaluate our approach on three datasets covering U.S.,
+                                European, and Swiss politics. Results indicate that reasoning enhances opinion modeling
+                                and is competitive with strong baselines, but does not fully remove bias, highlighting
+                                the need for additional mechanisms to build faithful political digital twins using LLMs.
+                                By releasing both our method and datasets, we establish a solid baseline to support
+                                future research on LLM opinion alignment.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@inproceedings{berdoz2026opinion,
+  author = {Berdoz, F. and Billeter, Y. and Vonlanthen, Y. and Wattenhofer, R.},
+  title = {{Reasoning Boosts Opinion Alignment in LLMs}},
+  booktitle = {{International Conference on Learning Representations (ICLR)}},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">High-Fidelity Speech Enhancement via Discrete Audio Tokens</h3>
+                        <div class="pub-meta">L. A. Lanzendörfer, <strong>F. Berdoz</strong>, A. Asonitis, R.
+                            Wattenhofer
+                            · ICASSP</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--arxiv"
+                                href="https://arxiv.org/abs/2510.02187" target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/dac-se1/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Recent autoregressive transformer-based speech enhancement (SE)
+                                methods have shown promising results by leveraging advanced semantic understanding and
+                                contextual modeling of speech. However, these approaches often rely on complex
+                                multi-stage pipelines and low sampling rate codecs, limiting them to narrow and
+                                task-specific speech enhancement. In this work, we introduce DAC-SE1, a simplified
+                                language model-based SE framework leveraging discrete high-resolution audio
+                                representations; DAC-SE1 preserves fine-grained acoustic details while maintaining
+                                semantic coherence. Our experiments show that DAC-SE1 surpasses state-of-the-art
+                                autoregressive SE methods on both objective perceptual metrics and in a MUSHRA human
+                                evaluation. We release our codebase and model checkpoints to support further research in
+                                scalable, unified, and high-quality speech enhancement.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@inproceedings{lanzendorfer2026high,
+  author = {Lanzend{\"o}rfer, L. A. and Berdoz, F. and Asonitis, A. and Wattenhofer, R.},
+  title = {{High-Fidelity Speech Enhancement via Discrete Audio Tokens}},
+  booktitle = {{IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Text-to-Scene with Large Reasoning Models</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, L. A. Lanzendörfer, N. Tuninga, R. Wattenhofer
+                            · AAAI (Oral)</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://doi.org/10.1609/aaai.v40i4.37229" target="_blank" rel="noopener">Paper</a>
+                            <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2509.26091"
+                                target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/reason-3d/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Prompt-driven scene synthesis allows users to generate complete 3D
+                                environments from textual descriptions. Current text-to-scene methods often struggle
+                                with complex geometries and object transformations, and tend to show weak adherence to
+                                complex instructions. We address these limitations by introducing Reason-3D, a
+                                text-to-scene model powered by large reasoning models (LRMs). Reason-3D integrates
+                                object retrieval using captions covering physical, functional, and contextual
+                                attributes. Reason-3D then places the selected objects based on implicit and explicit
+                                layout constraints, and refines their positions with collision-aware spatial reasoning.
+                                Evaluated on instructions ranging from simple to complex indoor configurations,
+                                Reason-3D significantly outperforms previous methods in human-rated visual fidelity,
+                                adherence to constraints, and asset retrieval quality. Beyond its contribution to the
+                                field of text-to-scene generation, our work showcases the advanced spatial reasoning
+                                abilities of modern LRMs. Additionally, we release the codebase to further the research
+                                in object retrieval and placement with LRMs.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@inproceedings{berdoz2026text,
+  author = {Berdoz, F. and Lanzend{\"o}rfer, L. A. and Tuninga, N. and Wattenhofer, R.},
+  title = {{Text-to-Scene with Large Reasoning Models}},
+  booktitle = {{AAAI Conference on Artificial Intelligence (AAAI)}},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Steering Pretrained Drafters during Speculative Decoding</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, P. Rheinboldt, R. Wattenhofer
+                            · AAAI (Oral)</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://doi.org/10.1609/aaai.v40i36.40255" target="_blank"
+                                rel="noopener">Paper</a>
+                            <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2511.09844"
+                                target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/sd-square/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Speculative decoding accelerates language model inference by
+                                separating generation into fast drafting and parallel verification. Its main limitation
+                                is drafter-verifier misalignment, which limits token acceptance and reduces overall
+                                effectiveness. While small drafting heads trained from scratch compensate with speed,
+                                they struggle when verification dominates latency or when inputs are out of
+                                distribution. In contrast, pretrained drafters, though slower, achieve higher acceptance
+                                rates thanks to stronger standalone generation capabilities, making them competitive
+                                when drafting latency is negligible relative to verification or communication overhead.
+                                In this work, we aim to improve the acceptance rates of pretrained drafters by
+                                introducing a lightweight dynamic alignment mechanism: a steering vector computed from
+                                the verifier’s hidden states and injected into the pretrained drafter. Compared to
+                                existing offline alignment methods such as distillation, our approach boosts the number
+                                of accepted tokens by up to 35% under standard sampling and 22% under greedy sampling,
+                                all while incurring negligible computational overhead. Importantly, our approach can be
+                                retrofitted to existing architectures and pretrained models, enabling rapid adoption.
+                            </div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@inproceedings{berdoz2026steering,
+  author = {Berdoz, F. and Rheinboldt, P. and Wattenhofer, R.},
+  title = {{Steering Pretrained Drafters during Speculative Decoding}},
+  booktitle = {{AAAI Conference on Artificial Intelligence (AAAI)}},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Data Attribution in Large Language Models via Bidirectional Gradient
+                            Optimization</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, L. A. Lanzendörfer, K. Bayraktar, R.
+                            Wattenhofer
+                            · AI Governance Workshop @ AAAI (Oral)</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://openreview.net/forum?id=b8LB75iwNH" target="_blank"
+                                rel="noopener">Paper</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Large Language Models (LLMs) are increasingly deployed across
+                                diverse applications, raising critical questions for governance, accountability, and
+                                data provenance. Understanding which training data most influenced a model’s output
+                                remains a fundamental open problem. We address this challenge through training data
+                                attribution (TDA) for auto-regressive LLMs by expanding upon the inverse formulation:
+                                How would training data be affected if the model had seen the generated output during
+                                training? Our method perturbs the base model using bidirectional gradient optimization
+                                (gradient ascent and descent) on a generated text sample and measures the resulting
+                                change in loss across training samples. Our framework supports attribution at arbitrary
+                                data granularity, enabling both factual and stylistic attribution. We evaluate our
+                                method against baselines on pretrained models with known datasets, and show that it
+                                outperforms previous work on influence metrics, thereby enhancing model
+                                interpretability, an essential requirement for accountable AI systems.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@misc{berdoz2026data,
+  author = {Berdoz, F. and Lanzend{\"o}rfer, L. A. and Bayraktar, K. and Wattenhofer, R.},
+  title = {{Data Attribution in Large Language Models via Bidirectional Gradient Optimization}},
+  note = {Accepted at Third International AI Governance Workshop (AIGOV@AAAI 2026)},
+  year = {2026}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pub-year-section">
+                    <h2 class="pub-year">2025</h2>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Alignment-Aware Decoding</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, L. A. Lanzendörfer, R. Caky, R. Wattenhofer
+                            · Preprint (Under review)</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--arxiv"
+                                href="https://arxiv.org/abs/2509.26169" target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project"
+                                href="/projects/alignment-aware-decoding/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Alignment of large language models remains a central challenge in
+                                natural language processing. Preference optimization has emerged as a popular and
+                                effective method for improving alignment, typically through training-time or
+                                prompt-based interventions. In this paper, we introduce alignment-aware decoding (AAD),
+                                a method to enhance model alignment directly at inference. Theoretically, AAD can be
+                                interpreted as implicit reward optimization, yet it requires no specialized training
+                                beyond the standard DPO setup. Empirically, AAD consistently outperforms strong
+                                baselines across diverse alignment benchmarks and model scales. Moreover, in
+                                data-constrained settings, AAD can produce high-quality synthetic data to improve
+                                alignment under standard decoding, providing a practical solution when labeled data is
+                                limited.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@misc{berdoz2025alignment,
+  author = {Berdoz, F. and Lanzend{\"o}rfer, L. A. and Caky, R. and Wattenhofer, R.},
+  title = {{Alignment-Aware Decoding}},
+  note = {arXiv:2509.26169},
+  year = {2025}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Recommender Systems for Democracy: Toward Adversarial Robustness in Voting
+                            Advice Applications</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, D. Brunner, Y. Vonlanthen, R. Wattenhofer
+                            · IJCAI (Oral)</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://doi.org/10.24963/ijcai.2025/1063" target="_blank" rel="noopener">Paper</a>
+                            <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2505.13329"
+                                target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/towards-vaa-robustness/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Voting advice applications (VAAs) help millions of voters
+                                understand which political parties or candidates best align with their views. This paper
+                                explores the potential risks these applications pose to the democratic process when
+                                targeted by adversarial entities. In particular, we expose 11 manipulation strategies
+                                and measure their impact using data from Switzerland’s primary VAA, Smartvote, collected
+                                during the last two national elections. We find that altering application parameters,
+                                such as the matching method, can shift a party’s recommendation frequency by up to 105%.
+                                Cherry-picking questionnaire items can increase party recommendation frequency by over
+                                261%, while subtle changes to parties’ or candidates’ responses can lead to a 248%
+                                increase. To address these vulnerabilities, we propose adversarial robustness properties
+                                VAAs should satisfy, introduce empirical metrics for assessing the resilience of various
+                                matching methods, and suggest possible avenues for research toward mitigating the effect
+                                of manipulation.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@inproceedings{berdoz2025recommender,
+  author = {Berdoz, F. and Brunner, D. and Vonlanthen, Y. and Wattenhofer, R.},
+  title = {{Recommender Systems for Democracy: Toward Adversarial Robustness in Voting Advice Applications}},
+  booktitle = {{International Joint Conference on Artificial Intelligence (IJCAI)}},
+  year = {2025}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pub-year-section">
+                    <h2 class="pub-year">2024</h2>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Can an AI Agent Safely Run a Government? Existence of Probably
+                            Approximately Aligned Policies</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, R. Wattenhofer
+                            · NeurIPS</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://doi.org/10.52202/079017-3168" target="_blank" rel="noopener">Paper</a>
+                            <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2412.00033"
+                                target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/can-ai-run-governments/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">While autonomous agents often surpass humans in their ability to
+                                handle vast and complex data, their potential misalignment (i.e., lack of transparency
+                                regarding their true objective) has thus far hindered their use in critical applications
+                                such as social decision processes. More importantly, existing alignment methods provide
+                                no formal guarantees on the safety of such models. Drawing from utility and social
+                                choice theory, we provide a novel quantitative definition of alignment in the context of
+                                social decision-making. Building on this definition, we introduce probably approximately
+                                aligned (i.e., near-optimal) policies, and we derive a sufficient condition for their
+                                existence. Lastly, recognizing the practical difficulty of satisfying this condition, we
+                                introduce the relaxed concept of safe (i.e., nondestructive) policies, and we propose a
+                                simple yet robust method to safeguard the black-box policy of any autonomous agent,
+                                ensuring all its actions are verifiably safe for the society.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@inproceedings{berdoz2024can,
+  author = {Berdoz, F. and Wattenhofer, R.},
+  title = {{Can an AI Agent Safely Run a Government? Existence of Probably Approximately Aligned Policies}},
+  booktitle = {{Advances in Neural Information Processing Systems (NeurIPS)}},
+  year = {2024}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pub-year-section">
+                    <h2 class="pub-year">2023</h2>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Fundamentals of Task-Agnostic Data Valuation</h3>
+                        <div class="pub-meta">M. M. Amiri, <strong>F. Berdoz</strong>, R. Raskar
+                            · AAAI</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--paper"
+                                href="https://doi.org/10.1609/aaai.v37i8.26106" target="_blank" rel="noopener">Paper</a>
+                            <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2208.12354"
+                                target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project" href="/projects/data-valuation/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">We study valuing the data of a data owner/seller for a data
+                                seeker/buyer. Data valuation is often carried out for a specific task assuming a
+                                particular utility metric, such as test accuracy on a validation set, that may not exist
+                                in practice. In this work, we focus on task-agnostic data valuation without any
+                                validation requirements. The data buyer has access to a limited amount of data and seeks
+                                more data samples from a data seller. We formulate the problem as estimating the
+                                differences in the statistical properties of the data at the seller with respect to the
+                                baseline data available at the buyer. We capture these statistical differences through
+                                second moment by measuring diversity and relevance of the seller’s data for the buyer.
+                            </div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@inproceedings{amiri2023fundamentals,
+  author = {Amiri, M. M. and Berdoz, F. and Raskar, R.},
+  title = {{Fundamentals of Task-Agnostic Data Valuation}},
+  booktitle = {{AAAI Conference on Artificial Intelligence (AAAI)}},
+  year = {2023}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pub-year-section">
+                    <h2 class="pub-year">2022</h2>
+                    <div class="pub-card">
+                        <h3 class="pub-title">Scalable Collaborative Learning via Representation Sharing</h3>
+                        <div class="pub-meta"><strong>F. Berdoz</strong>, A. Singh, M. Jaggi, R. Raskar
+                            · Decentralization and Trustworthy ML Workshop @ NeurIPS (Best Paper Runner-up)</div>
+                        <div class="pub-badges"><a class="pub-badge pub-badge--arxiv"
+                                href="https://arxiv.org/abs/2211.10943" target="_blank" rel="noopener">arXiv</a>
+                            <a class="pub-badge pub-badge--project"
+                                href="/projects/scalable-collaborative-learning/">Project</a>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--abstract&quot;).classList.toggle(&quot;open&quot;)">Abstract</button>
+                            <button class="pub-badge pub-badge--toggle"
+                                onclick="this.classList.toggle(&quot;active&quot;),this.closest(&quot;.pub-card&quot;).querySelector(&quot;.pub-panel--bibtex&quot;).classList.toggle(&quot;open&quot;)">BibTeX</button>
+                        </div>
+                        <div class="pub-panel pub-panel--abstract">
+                            <div class="pub-abstract">Privacy-preserving machine learning has become a key conundrum for
+                                multi-party artificial intelligence. Federated learning (FL) and Split Learning (SL) are
+                                two frameworks that enable collaborative learning while keeping the data private (on
+                                device). In this work, we present a novel approach for privacy-preserving machine
+                                learning, where the clients collaborate via online knowledge distillation using a
+                                contrastive loss. The goal is to ensure that the participants learn similar features on
+                                similar classes without sharing their input data. For cross-device applications, this
+                                approach increases the utility of the models compared to independent learning and other
+                                federated knowledge distillation schemes, is communication efficient and is scalable
+                                with the number of clients.</div>
+                        </div>
+                        <div class="pub-panel pub-panel--bibtex">
+                            <div class="pub-bibtex-wrap">
+                                <pre class="pub-bibtex"><code>@misc{berdoz2022scalable,
+  author = {Berdoz, F. and Singh, A. and Jaggi, M. and Raskar, R.},
+  title = {{Scalable Collaborative Learning via Representation Sharing}},
+  note = {Best Paper Runner-up at NeurIPS Workshop on Decentralization and Trustworthy ML in Web3. arXiv:2211.10943},
+  year = {2022}
+}
+</code></pre><button class="pub-copy-btn"
+                                    onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=&gt;{this.textContent=&quot;Copied!&quot;,setTimeout(()=&gt;{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container"><span>© 2026 Frédéric Berdoz</span>
+                <div class="social-links"><a href="mailto:fberdoz@ethz.ch" title="Email"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.1.0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1.0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
+                            </path>
+                        </svg>
+                    </a><a href="https://github.com/fberdoz" title="GitHub" target="_blank" rel="noopener"><svg
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 .3A12 12 0 008.2 23.7c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2.0.0 1-.3 3.3 1.2a11.5 11.5.0 016 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2.0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3">
+                            </path>
+                        </svg>
+                    </a><a href="https://linkedin.com/in/frederic-berdoz" title="LinkedIn" target="_blank"
+                        rel="noopener"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M20.5 2h-17A1.5 1.5.0 002 3.5v17A1.5 1.5.0 003.5 22h17a1.5 1.5.0 001.5-1.5v-17A1.5 1.5.0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75.0 118.3 6.5 1.78 1.78.0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74.0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11.0 012.7-1.4c1.55.0 3.36.86 3.36 3.66z">
+                            </path>
+                        </svg>
+                    </a><a href="https://x.com/FredericBerdoz" title="X (Twitter)" target="_blank" rel="noopener"><svg
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg>
+                    </a><a href="https://scholar.google.com/citations?user=27Ud3mIAAAAJ" title="Google Scholar"
+                        target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M5.242 13.769.0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977.0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z">
+                            </path>
+                        </svg></a></div>
+            </div>
+        </footer>
+    </div>
+    <script>(function () { const e = document.getElementById("nav-hamburger"), t = document.getElementById("nav-links"); if (!e || !t) return; e.addEventListener("click", function () { const n = e.classList.toggle("open"); t.classList.toggle("open"), e.setAttribute("aria-expanded", n), e.setAttribute("aria-label", n ? "Close menu" : "Open menu") }), t.querySelectorAll("a").forEach(function (n) { n.addEventListener("click", function () { e.classList.remove("open"), t.classList.remove("open"), e.setAttribute("aria-expanded", "false"), e.setAttribute("aria-label", "Open menu") }) }) })(), function () { const e = document.getElementById("theme-toggle"), t = document.documentElement, n = localStorage.getItem("theme"); n ? t.setAttribute("data-theme", n) : window.matchMedia("(prefers-color-scheme: light)").matches && t.setAttribute("data-theme", "light"), e && e.addEventListener("click", function () { const n = t.getAttribute("data-theme") === "dark" ? "light" : "dark"; t.setAttribute("data-theme", n), localStorage.setItem("theme", n), e.textContent = n === "dark" ? "☀" : "☾" }), e && (e.textContent = t.getAttribute("data-theme") === "dark" ? "☀" : "☾") }()</script>
+</body>
+
+</html>

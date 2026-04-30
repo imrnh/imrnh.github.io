@@ -1,0 +1,246 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Projects · Frédéric Berdoz</title>
+    <meta name="description" content="Research projects on AI alignment, LLM reasoning, and more.">
+    <link rel="icon" href="https://fberdoz.github.io/img/favicon_fb.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fberdoz.github.io/css/main.min.f53399127e251b498e94bce3e0a63dd6f9dbe4ac4dc9237dd23e9ae881f1464e.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+        integrity="sha384-zh0CIslj3FnGCnGkjhM0JEQXx2kFIQICxTKZeEBOp1MNYhOKkMnGGBpqBB1WYqb" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <nav class="nav">
+            <div class="container"><a class="nav-brand" href="/">~/fberdoz</a>
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span></button>
+                <div class="nav-links" id="nav-links"><a href="/">Home</a>
+                    <a href="/publications/">Publications</a>
+                    <a href="/teaching/">Teaching</a>
+                    <a href="/research-notes/">Research</a>
+                    <a href="/projects/" class="active">Projects</a>
+                    <a href="/cv/">CV</a>
+                    <a href="/newsletter/">AI Intel</a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀</button>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="article-header">
+                    <h1>Projects</h1>
+                    <p class="text-dim">Research projects on AI alignment, LLM reasoning, and more.</p>
+                </div>
+                <div class="project-grid"><a class="project-card" href="/projects/can-agents-agree/">
+                        <div class="project-card-thumb"><img
+                                src="/projects/can-agents-agree/assets/fig_combined_rounds_outcomes.png"
+                                alt="Can AI Agents Agree?"></div>
+                        <div class="project-card-body">
+                            <h3>Can AI Agents Agree?</h3>
+                            <div class="meta">Preprint 2026</div>
+                            <div class="tldr">We evaluate LLM-based agents on Byzantine consensus and find that reliable
+                                agreement is not yet a dependable capability, even in benign no-stake settings.</div>
+                            <div class="tags"><span class="tag">multi-agent</span><span
+                                    class="tag">consensus</span><span class="tag">byzantine-fault-tolerance</span><span
+                                    class="tag">language-models</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/dac-se1/">
+                        <div class="project-card-thumb"><img src="/projects/dac-se1/assets/DAC-SE1.drawio.png"
+                                alt="High-Fidelity Speech Enhancement via Discrete Audio Tokens"></div>
+                        <div class="project-card-body">
+                            <h3>High-Fidelity Speech Enhancement via Discrete Audio Tokens</h3>
+                            <div class="meta">ICASSP 2026</div>
+                            <div class="tldr">We introduce DAC-SE1, a simplified language model framework on
+                                high-resolution discrete audio tokens that achieves state-of-the-art speech enhancement
+                                without multi-stage pipelines.</div>
+                            <div class="tags"><span class="tag">speech-enhancement</span><span
+                                    class="tag">audio-tokens</span><span class="tag">language-models</span><span
+                                    class="tag">bandwidth-extension</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/reason-3d/">
+                        <div class="project-card-thumb"><img src="/projects/reason-3d/assets/overview.png"
+                                alt="Text-to-Scene with Large Reasoning Models"></div>
+                        <div class="project-card-body">
+                            <h3>Text-to-Scene with Large Reasoning Models</h3>
+                            <div class="meta">AAAI 2026</div>
+                            <div class="tldr">We introduce Reason-3D, a text-to-3D scene synthesis system that leverages
+                                large reasoning models for collision-aware spatial reasoning and semantic object
+                                retrieval.</div>
+                            <div class="tags"><span class="tag">text-to-scene</span><span
+                                    class="tag">3d-generation</span><span class="tag">reasoning-models</span><span
+                                    class="tag">spatial-reasoning</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/reasoning-boosts-alignment/">
+                        <div class="project-card-thumb"><img
+                                src="/projects/reasoning-boosts-alignment/assets/overview.png"
+                                alt="Reasoning Boosts Opinion Alignment in LLMs"></div>
+                        <div class="project-card-body">
+                            <h3>Reasoning Boosts Opinion Alignment in LLMs</h3>
+                            <div class="meta">ICLR 2026</div>
+                            <div class="tldr">We show that reasoning boosts opinion alignment in LLMs, enabling models
+                                to produce profile-aligned opinions across political datasets for faithful digital twins
+                                of democratic processes.</div>
+                            <div class="tags"><span class="tag">opinion-modeling</span><span
+                                    class="tag">reinforcement-learning</span><span
+                                    class="tag">political-alignment</span><span class="tag">language-models</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/sd-square/">
+                        <div class="project-card-thumb"><img src="/projects/sd-square/assets/method-overview.drawio.png"
+                                alt="Steering Pretrained Drafters during Speculative Decoding"></div>
+                        <div class="project-card-body">
+                            <h3>Steering Pretrained Drafters during Speculative Decoding</h3>
+                            <div class="meta">AAAI 2026</div>
+                            <div class="tldr">We introduce a lightweight steering mechanism that injects verifier hidden
+                                states into pretrained drafters during speculative decoding, boosting acceptance rates
+                                by up to 35% with negligible overhead.</div>
+                            <div class="tags"><span class="tag">speculative-decoding</span><span
+                                    class="tag">llm-inference</span><span class="tag">activation-steering</span><span
+                                    class="tag">language-models</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/structure-llm-reasoning/">
+                        <div class="project-card-thumb"><img
+                                src="/projects/structure-llm-reasoning/assets/puzzle_grid_labeled.png"
+                                alt="Reasoning Structure of Large Language Models"></div>
+                        <div class="project-card-body">
+                            <h3>Reasoning Structure of Large Language Models</h3>
+                            <div class="meta">Logical Reasoning of LLMs Workshop @ ICLR 2026</div>
+                            <div class="tldr">We introduce a graph-based framework and benchmark for analyzing the
+                                reasoning structure of LLMs, revealing that token count is a poor proxy for reasoning
+                                quality.</div>
+                            <div class="tags"><span class="tag">reasoning</span><span class="tag">benchmarks</span><span
+                                    class="tag">graph-analysis</span><span class="tag">language-models</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/subliminal-preferences/">
+                        <div class="project-card-thumb"><img src="/projects/subliminal-preferences/assets/overview.png"
+                                alt="Subliminal Signals in Preference Labels"></div>
+                        <div class="project-card-body">
+                            <h3>Subliminal Signals in Preference Labels</h3>
+                            <div class="meta">Agents in the Wild Workshop @ ICLR 2026</div>
+                            <div class="tldr">We show that binary preference labels can function as a covert
+                                communication channel, enabling a biased judge to transmit hidden behavioral traits to a
+                                student model through alignment.</div>
+                            <div class="tags"><span class="tag">ai-alignment</span><span
+                                    class="tag">preference-learning</span><span class="tag">superalignment</span><span
+                                    class="tag">llm-evaluation</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/alignment-aware-decoding/">
+                        <div class="project-card-thumb"><img src="/projects/alignment-aware-decoding/assets/method.png"
+                                alt="Alignment-Aware Decoding"></div>
+                        <div class="project-card-body">
+                            <h3>Alignment-Aware Decoding</h3>
+                            <div class="meta">Preprint 2025</div>
+                            <div class="tldr">We introduce alignment-aware decoding (AAD), a training-free
+                                inference-time method that steers LLM decoding toward aligned outputs using the implicit
+                                reward signal from DPO.</div>
+                            <div class="tags"><span class="tag">ai-alignment</span><span
+                                    class="tag">decoding</span><span class="tag">preference-optimization</span><span
+                                    class="tag">language-models</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/towards-vaa-robustness/">
+                        <div class="project-card-thumb"><img
+                                src="/projects/towards-vaa-robustness/assets/what_if_neutral_answering_strategy_L2_L1_big_parties_tiebreaking_times_actual_bottommargin_english.png"
+                                alt="Recommender Systems for Democracy: Toward Adversarial Robustness in Voting Advice Applications">
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Recommender Systems for Democracy: Toward Adversarial Robustness in Voting Advice
+                                Applications</h3>
+                            <div class="meta">IJCAI 2025</div>
+                            <div class="tldr">We expose 11 manipulation strategies in voting advice applications and
+                                propose robustness metrics and more resilient matching methods.</div>
+                            <div class="tags"><span class="tag">voting-advice</span><span
+                                    class="tag">adversarial-robustness</span><span
+                                    class="tag">computational-social-choice</span><span class="tag">democracy</span>
+                            </div>
+                        </div>
+                    </a><a class="project-card" href="/projects/can-ai-run-governments/">
+                        <div class="project-card-thumb"><img src="/projects/can-ai-run-governments/assets/paa.png"
+                                alt="Can an AI Agent Safely Run a Government? Existence of Probably Approximately Aligned Policies">
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Can an AI Agent Safely Run a Government? Existence of Probably Approximately Aligned
+                                Policies</h3>
+                            <div class="meta">NeurIPS 2024</div>
+                            <div class="tldr">We provide formal guarantees for AI alignment in social decision-making
+                                and introduce a practical safeguarding method that makes any autonomous agent provably
+                                safe.</div>
+                            <div class="tags"><span class="tag">ai-alignment</span><span
+                                    class="tag">social-choice</span><span class="tag">formal-guarantees</span><span
+                                    class="tag">autonomous-agents</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/data-valuation/">
+                        <div class="project-card-thumb"><img src="/projects/data-valuation/assets/Algorithm.png"
+                                alt="Fundamentals of Task-Agnostic Data Valuation"></div>
+                        <div class="project-card-body">
+                            <h3>Fundamentals of Task-Agnostic Data Valuation</h3>
+                            <div class="meta">AAAI 2023</div>
+                            <div class="tldr">We introduce a task-agnostic data valuation framework based on diversity
+                                and relevance metrics over second-moment statistics, without requiring a downstream task
+                                or validation set.</div>
+                            <div class="tags"><span class="tag">data-valuation</span><span
+                                    class="tag">data-markets</span><span class="tag">federated-learning</span><span
+                                    class="tag">privacy</span></div>
+                        </div>
+                    </a><a class="project-card" href="/projects/scalable-collaborative-learning/">
+                        <div class="project-card-thumb"><img
+                                src="/projects/scalable-collaborative-learning/assets/FRED.png"
+                                alt="Scalable Collaborative Learning via Representation Sharing"></div>
+                        <div class="project-card-body">
+                            <h3>Scalable Collaborative Learning via Representation Sharing</h3>
+                            <div class="meta">Decentralization and Trustworthy ML Workshop @ NeurIPS 2022</div>
+                            <div class="tldr">We introduce a privacy-preserving collaborative learning framework where
+                                clients share feature prototypes via contrastive knowledge distillation, achieving
+                                scalable learning with minimal communication.</div>
+                            <div class="tags"><span class="tag">federated-learning</span><span
+                                    class="tag">knowledge-distillation</span><span class="tag">privacy</span><span
+                                    class="tag">collaborative-learning</span></div>
+                        </div>
+                    </a></div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container"><span>© 2026 Frédéric Berdoz</span>
+                <div class="social-links"><a href="mailto:fberdoz@ethz.ch" title="Email"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.1.0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1.0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
+                            </path>
+                        </svg>
+                    </a><a href="https://github.com/fberdoz" title="GitHub" target="_blank" rel="noopener"><svg
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 .3A12 12 0 008.2 23.7c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2.0.0 1-.3 3.3 1.2a11.5 11.5.0 016 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2.0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3">
+                            </path>
+                        </svg>
+                    </a><a href="https://linkedin.com/in/frederic-berdoz" title="LinkedIn" target="_blank"
+                        rel="noopener"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M20.5 2h-17A1.5 1.5.0 002 3.5v17A1.5 1.5.0 003.5 22h17a1.5 1.5.0 001.5-1.5v-17A1.5 1.5.0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75.0 118.3 6.5 1.78 1.78.0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74.0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11.0 012.7-1.4c1.55.0 3.36.86 3.36 3.66z">
+                            </path>
+                        </svg>
+                    </a><a href="https://x.com/FredericBerdoz" title="X (Twitter)" target="_blank" rel="noopener"><svg
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg>
+                    </a><a href="https://scholar.google.com/citations?user=27Ud3mIAAAAJ" title="Google Scholar"
+                        target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M5.242 13.769.0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977.0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z">
+                            </path>
+                        </svg></a></div>
+            </div>
+        </footer>
+    </div>
+    <script>(function () { const e = document.getElementById("nav-hamburger"), t = document.getElementById("nav-links"); if (!e || !t) return; e.addEventListener("click", function () { const n = e.classList.toggle("open"); t.classList.toggle("open"), e.setAttribute("aria-expanded", n), e.setAttribute("aria-label", n ? "Close menu" : "Open menu") }), t.querySelectorAll("a").forEach(function (n) { n.addEventListener("click", function () { e.classList.remove("open"), t.classList.remove("open"), e.setAttribute("aria-expanded", "false"), e.setAttribute("aria-label", "Open menu") }) }) })(), function () { const e = document.getElementById("theme-toggle"), t = document.documentElement, n = localStorage.getItem("theme"); n ? t.setAttribute("data-theme", n) : window.matchMedia("(prefers-color-scheme: light)").matches && t.setAttribute("data-theme", "light"), e && e.addEventListener("click", function () { const n = t.getAttribute("data-theme") === "dark" ? "light" : "dark"; t.setAttribute("data-theme", n), localStorage.setItem("theme", n), e.textContent = n === "dark" ? "☀" : "☾" }), e && (e.textContent = t.getAttribute("data-theme") === "dark" ? "☀" : "☾") }()</script>
+</body>
+
+</html>

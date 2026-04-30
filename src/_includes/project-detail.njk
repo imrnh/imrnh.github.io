@@ -1,0 +1,45 @@
+---
+layout: base.njk
+---
+<div class="project-header">
+    <h1>{{ title }}</h1>
+    {% if subtitle %}<p class="project-subtitle">{{ subtitle }}</p>{% endif %}
+    {% if authors %}<p class="project-authors">{{ authors | markdown | safe }}</p>{% endif %}
+    {% if affiliation %}<p class="project-affiliation">{{ affiliation }}</p>{% endif %}
+    {% if tags %}
+    <div class="tags">
+        {% for tag in tags %}
+            {% if tag != "projects" %} {# Eleventy might include the collection name in tags, let's filter it out #}
+            <span class="tag">{{ tag }}</span>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% if arxiv_link or paper_link %}
+<div class="project-actions">
+    {% if arxiv_link %}
+    <a class="project-btn project-btn--arxiv" href="{{ arxiv_link }}" target="_blank" rel="noopener">arXiv</a>
+    {% endif %}
+    {% if paper_link %}
+    <a class="project-btn project-btn--arxiv" href="{{ paper_link }}" target="_blank" rel="noopener">Paper</a>
+    {% endif %}
+</div>
+{% endif %}
+<hr>
+{% if abstract %}
+<h2>Abstract</h2>
+<div class="pub-abstract" style="font-style:italic">{{ abstract | safe }}</div>
+{% endif %}
+<div class="project-body">
+    {{ content | safe }}
+</div>
+{% if bibtex %}
+<section class="project-citation">
+    <h2>Citation</h2>
+    <div class="pub-bibtex-wrap">
+        <pre class="pub-bibtex"><code>{{ bibtex }}</code></pre>
+        <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent=&quot;Copied!&quot;,setTimeout(()=>{this.textContent=&quot;Copy&quot;},1500)})">Copy</button>
+    </div>
+</section>
+{% endif %}
