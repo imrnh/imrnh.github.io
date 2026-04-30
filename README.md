@@ -1,4 +1,4 @@
-# Frédéric Berdoz - Personal Website
+# Imran Hossen - Personal Website
 
 This is a statically generated portfolio website built using **Eleventy (11ty)** and Node.js. It features a responsive layout, a default dark mode, and a dynamically generated structure for Projects, Publications, and News via Markdown files.
 
