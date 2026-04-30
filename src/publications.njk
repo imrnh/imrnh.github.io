@@ -6,50 +6,45 @@ title: Publications · Frédéric Berdoz
     <h1>Publications</h1>
     <p class="text-dim">My research focuses on AI alignment and speech enhancement. Below is a list of my publications.</p>
 </div>
-<section>
-    {% set grouped = collections.publications | reverse | groupByYear %}
-    {% for group in grouped %}
-        <h2 class="mt-2">{{ group.year }}</h2>
-        <div class="pub-list">
-            {% for item in group.items %}
-            <div class="pub-card">
-                <div class="pub-main">
-                    <h3 class="pub-title">{{ item.data.title }}</h3>
-                    <p class="pub-authors">{{ item.data.authors | markdown | safe }}</p>
-                    <p class="pub-venue">{{ item.data.venue }}</p>
-                    <div class="pub-links">
-                        {% if item.data.paper_link %}
-                            <a class="pub-btn" href="{{ item.data.paper_link }}" target="_blank" rel="noopener">Paper</a>
-                        {% endif %}
-                        {% if item.data.arxiv_link %}
-                            <a class="pub-btn pub-btn--arxiv" href="{{ item.data.arxiv_link }}" target="_blank" rel="noopener">arXiv</a>
-                        {% endif %}
-                        {% if item.data.project_link %}
-                            <a class="pub-btn" href="{{ item.data.project_link }}">Project</a>
-                        {% endif %}
-                        {% if item.templateContent %}
-                            <button class="pub-btn" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
-                        {% endif %}
-                        {% if item.data.bibtex %}
-                            <button class="pub-btn" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
-                        {% endif %}
-                    </div>
-                    {% if item.templateContent %}
-                    <div class="pub-panel pub-panel--abstract">
-                        <div class="pub-abstract">{{ item.templateContent | safe }}</div>
-                    </div>
-                    {% endif %}
-                    {% if item.data.bibtex %}
-                    <div class="pub-panel pub-panel--bibtex">
-                        <div class="pub-bibtex-wrap">
-                            <pre class="pub-bibtex"><code>{{ item.data.bibtex }}</code></pre>
-                            <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-            {% endfor %}
+{% set grouped = collections.publications | reverse | groupByYear %}
+{% for group in grouped %}
+<section class="pub-year-section">
+    <h2 class="pub-year">{{ group.year }}</h2>
+    {% for item in group.items %}
+    <div class="pub-card">
+        <h3 class="pub-title">{{ item.data.title }}</h3>
+        <div class="pub-meta">{{ item.data.authors | markdown | safe }} · {{ item.data.venue }}</div>
+        <div class="pub-badges">
+            {% if item.data.paper_link %}
+                <a class="pub-badge pub-badge--paper" href="{{ item.data.paper_link }}" target="_blank" rel="noopener">Paper</a>
+            {% endif %}
+            {% if item.data.arxiv_link %}
+                <a class="pub-badge pub-badge--arxiv" href="{{ item.data.arxiv_link }}" target="_blank" rel="noopener">arXiv</a>
+            {% endif %}
+            {% if item.data.project_link %}
+                <a class="pub-badge pub-badge--project" href="{{ item.data.project_link }}">Project</a>
+            {% endif %}
+            {% if item.templateContent %}
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
+            {% endif %}
+            {% if item.data.bibtex %}
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
+            {% endif %}
         </div>
+        {% if item.templateContent %}
+        <div class="pub-panel pub-panel--abstract">
+            <div class="pub-abstract">{{ item.templateContent | safe }}</div>
+        </div>
+        {% endif %}
+        {% if item.data.bibtex %}
+        <div class="pub-panel pub-panel--bibtex">
+            <div class="pub-bibtex-wrap">
+                <pre class="pub-bibtex"><code>{{ item.data.bibtex }}</code></pre>
+                <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
     {% endfor %}
 </section>
+{% endfor %}

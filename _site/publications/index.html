@@ -36,56 +36,245 @@
     <h1>Publications</h1>
     <p class="text-dim">My research focuses on AI alignment and speech enhancement. Below is a list of my publications.</p>
 </div>
-<section>
+
+
+<section class="pub-year-section">
+    <h2 class="pub-year">2026</h2>
     
-    
-        <h2 class="mt-2">2026</h2>
-        <div class="pub-list">
+    <div class="pub-card">
+        <h3 class="pub-title">Quantum Computing for Artificial General Intelligence</h3>
+        <div class="pub-meta">A. Turing, <strong>F. Berdoz</strong>, C. Shannon · Conference on Neural Information Processing Systems (NeurIPS)</div>
+        <div class="pub-badges">
             
-            <div class="pub-card">
-                <div class="pub-main">
-                    <h3 class="pub-title">Subliminal Signals in Preference Labels</h3>
-                    <p class="pub-authors">I. Magistrali, <strong>F. Berdoz</strong>, S. Dauncey, R. Wattenhofer</p>
-                    <p class="pub-venue">Agents in the Wild Workshop @ ICLR</p>
-                    <div class="pub-links">
-                        
-                            <a class="pub-btn" href="https://arxiv.org/abs/..." target="_blank" rel="noopener">Paper</a>
-                        
-                        
-                        
-                        
-                            <button class="pub-btn" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
-                        
-                        
-                            <button class="pub-btn" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
-                        
-                    </div>
-                    
-                    <div class="pub-panel pub-panel--abstract">
-                        <div class="pub-abstract"><p>As AI systems approach superhuman capabilities, scalable oversight has emerged as a critical challenge. A key assumption in preference-based RLHF is that human evaluators (or larger AI models) provide unbiased feedback based purely on the content's quality. In this paper, we demonstrate that preference labels often contain &quot;subliminal signals&quot; – subtle, semantically irrelevant cues that models exploit to maximize reward without genuinely improving response quality. We systematically categorize these signals and propose a novel debiasing framework that significantly improves the robustness of the alignment process across multiple benchmarks.</p>
+            
+                <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2612.00001" target="_blank" rel="noopener">arXiv</a>
+            
+            
+                <a class="pub-badge pub-badge--project" href="https://github.com/fberdoz/qc-agi">Project</a>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
+            
+        </div>
+        
+        <div class="pub-panel pub-panel--abstract">
+            <div class="pub-abstract"><p>This paper explores the intersection of quantum computing algorithms and AGI development. We propose a novel quantum neural network architecture that demonstrates exponential speedups in specific reinforcement learning environments. Our findings suggest that quantum supremacy in AI might be closer than previously anticipated.</p>
 </div>
-                    </div>
-                    
-                    
-                    <div class="pub-panel pub-panel--bibtex">
-                        <div class="pub-bibtex-wrap">
-                            <pre class="pub-bibtex"><code>@inproceedings{magistrali2026subliminal,
+        </div>
+        
+        
+        <div class="pub-panel pub-panel--bibtex">
+            <div class="pub-bibtex-wrap">
+                <pre class="pub-bibtex"><code>@inproceedings{turing2026quantum,
+  title={Quantum Computing for Artificial General Intelligence},
+  author={Turing, A. and Berdoz, F. and Shannon, C.},
+  booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2026}
+}
+</code></pre>
+                <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="pub-card">
+        <h3 class="pub-title">Zero-Shot Everything: A Unifying Framework</h3>
+        <div class="pub-meta"><strong>F. Berdoz</strong>, Y. Bengio · International Conference on Machine Learning (ICML)</div>
+        <div class="pub-badges">
+            
+                <a class="pub-badge pub-badge--paper" href="https://proceedings.mlr.press/..." target="_blank" rel="noopener">Paper</a>
+            
+            
+                <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2607.12345" target="_blank" rel="noopener">arXiv</a>
+            
+            
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
+            
+        </div>
+        
+        
+        <div class="pub-panel pub-panel--bibtex">
+            <div class="pub-bibtex-wrap">
+                <pre class="pub-bibtex"><code>@inproceedings{berdoz2026zeroshot,
+  title={Zero-Shot Everything: A Unifying Framework},
+  author={Berdoz, F. and Bengio, Y.},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2026}
+}
+</code></pre>
+                <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="pub-card">
+        <h3 class="pub-title">Subliminal Signals in Preference Labels</h3>
+        <div class="pub-meta">I. Magistrali, <strong>F. Berdoz</strong>, S. Dauncey, R. Wattenhofer · Agents in the Wild Workshop @ ICLR</div>
+        <div class="pub-badges">
+            
+                <a class="pub-badge pub-badge--paper" href="https://arxiv.org/abs/..." target="_blank" rel="noopener">Paper</a>
+            
+            
+            
+                <a class="pub-badge pub-badge--project" href="/projects/dac-se1/">Project</a>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
+            
+        </div>
+        
+        <div class="pub-panel pub-panel--abstract">
+            <div class="pub-abstract"><p>As AI systems approach superhuman capabilities, scalable oversight has emerged as a critical challenge. A key assumption in preference-based RLHF is that human evaluators (or larger AI models) provide unbiased feedback based purely on the content's quality. In this paper, we demonstrate that preference labels often contain &quot;subliminal signals&quot; – subtle, semantically irrelevant cues that models exploit to maximize reward without genuinely improving response quality. We systematically categorize these signals and propose a novel debiasing framework that significantly improves the robustness of the alignment process across multiple benchmarks.</p>
+</div>
+        </div>
+        
+        
+        <div class="pub-panel pub-panel--bibtex">
+            <div class="pub-bibtex-wrap">
+                <pre class="pub-bibtex"><code>@inproceedings{magistrali2026subliminal,
   title={Subliminal Signals in Preference Labels},
   author={Magistrali, I. and Berdoz, F. and Dauncey, S. and Wattenhofer, R.},
   booktitle={Agents in the Wild Workshop @ ICLR},
   year={2026}
 }
 </code></pre>
-                            <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
-                        </div>
-                    </div>
-                    
-                </div>
+                <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
             </div>
-            
         </div>
+        
+    </div>
     
 </section>
+
+<section class="pub-year-section">
+    <h2 class="pub-year">2025</h2>
+    
+    <div class="pub-card">
+        <h3 class="pub-title">Robust Robotic Manipulation via Sim-to-Real Transfer</h3>
+        <div class="pub-meta">R. Brooks, <strong>F. Berdoz</strong> · International Conference on Robotics and Automation (ICRA)</div>
+        <div class="pub-badges">
+            
+            
+            
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
+            
+        </div>
+        
+        
+        <div class="pub-panel pub-panel--bibtex">
+            <div class="pub-bibtex-wrap">
+                <pre class="pub-bibtex"><code>@inproceedings{brooks2025robust,
+  title={Robust Robotic Manipulation via Sim-to-Real Transfer},
+  author={Brooks, R. and Berdoz, F.},
+  booktitle={International Conference on Robotics and Automation (ICRA)},
+  year={2025}
+}
+</code></pre>
+                <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="pub-card">
+        <h3 class="pub-title">Beyond O(N^2): Truly Efficient Transformers</h3>
+        <div class="pub-meta">J. Doe, <strong>F. Berdoz</strong>, A. Vaswani · Association for Computational Linguistics (ACL)</div>
+        <div class="pub-badges">
+            
+            
+            
+                <a class="pub-badge pub-badge--project" href="https://github.com/fberdoz/efficient-transformers">Project</a>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
+            
+        </div>
+        
+        <div class="pub-panel pub-panel--abstract">
+            <div class="pub-abstract"><p>We present a new self-attention mechanism that operates in linear time and space complexity without sacrificing performance on downstream tasks. We evaluate our model on the GLUE benchmark and demonstrate competitive results with only a fraction of the computational cost.</p>
+</div>
+        </div>
+        
+        
+        <div class="pub-panel pub-panel--bibtex">
+            <div class="pub-bibtex-wrap">
+                <pre class="pub-bibtex"><code>@inproceedings{doe2025efficient,
+  title={Beyond O(N^2): Truly Efficient Transformers},
+  author={Doe, J. and Berdoz, F. and Vaswani, A.},
+  booktitle={Association for Computational Linguistics (ACL)},
+  year={2025}
+}
+</code></pre>
+                <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+<section class="pub-year-section">
+    <h2 class="pub-year">2024</h2>
+    
+    <div class="pub-card">
+        <h3 class="pub-title">Understanding Legacy Systems with Large Language Models</h3>
+        <div class="pub-meta"><strong>F. Berdoz</strong> · International Conference on Software Engineering (ICSE)</div>
+        <div class="pub-badges">
+            
+                <a class="pub-badge pub-badge--paper" href="https://dl.acm.org/doi/10.1145/..." target="_blank" rel="noopener">Paper</a>
+            
+            
+                <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/2404.00999" target="_blank" rel="noopener">arXiv</a>
+            
+            
+                <a class="pub-badge pub-badge--project" href="https://fberdoz.github.io/legacy-llm">Project</a>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
+            
+            
+                <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--bibtex').classList.toggle('open')">BibTeX</button>
+            
+        </div>
+        
+        <div class="pub-panel pub-panel--abstract">
+            <div class="pub-abstract"><p>Migrating legacy codebases to modern architectures is a time-consuming and error-prone process. In this work, we investigate the use of large language models to assist software engineers in understanding and refactoring legacy systems. We present a case study on a large-scale industrial project and discuss the benefits and limitations of this approach.</p>
+</div>
+        </div>
+        
+        
+        <div class="pub-panel pub-panel--bibtex">
+            <div class="pub-bibtex-wrap">
+                <pre class="pub-bibtex"><code>@inproceedings{berdoz2024legacy,
+  title={Understanding Legacy Systems with Large Language Models},
+  author={Berdoz, F.},
+  booktitle={International Conference on Software Engineering (ICSE)},
+  year={2024}
+}
+</code></pre>
+                <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
 
             </div>
         </main>

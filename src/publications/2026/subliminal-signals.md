@@ -6,7 +6,7 @@ date: 2026-03-01
 year: 2026
 paper_link: "https://arxiv.org/abs/..."
 arxiv_link: ""
-project_link: ""
+project_link: "/projects/dac-se1/"
 bibtex: |
   @inproceedings{magistrali2026subliminal,
     title={Subliminal Signals in Preference Labels},
