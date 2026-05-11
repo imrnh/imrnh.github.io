@@ -4,7 +4,7 @@ title: Publications · Imran Hossen
 ---
 <div class="article-header">
     <h1>Publications</h1>
-    <p class="text-dim">My research focuses on AI alignment and speech enhancement. Below is a list of my publications.</p>
+    <p class="text-dim">Below is a list of my publications.</p>
 </div>
 {% set grouped = collections.publications | reverse | groupByYear %}
 {% for group in grouped %}
@@ -23,6 +23,9 @@ title: Publications · Imran Hossen
             {% endif %}
             {% if item.data.project_link %}
                 <a class="pub-badge pub-badge--project" href="{{ item.data.project_link }}">Project</a>
+            {% endif %}
+            {% if item.data.research_link %}
+                <a class="pub-badge pub-badge--project" href="{{ item.data.research_link }}">Research Page</a>
             {% endif %}
             {% if item.templateContent %}
                 <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>

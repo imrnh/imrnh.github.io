@@ -6,6 +6,7 @@ date: 2025-12-19
 year: 2025
 paper_link: "https://ieeexplore.ieee.org/document/11491078"
 project_link: "/projects/f2hf/"
+research_link: "/research/f2hf/"
 bibtex: |
   @INPROCEEDINGS{11491078,
     author={Hossen, Imran and Alam, Kazi Saeed},

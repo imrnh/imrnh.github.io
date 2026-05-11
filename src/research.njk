@@ -1,13 +1,13 @@
 ---
 layout: base.njk
-title: Projects · Imran Hossen
+title: Research Notes · Imran Hossen
 ---
 <div class="article-header">
-    <h1>Projects</h1>
-    <p class="text-dim">Research projects on AI alignment, LLM reasoning, and more.</p>
+    <h1>Research Notes</h1>
+    <p class="text-dim">Curated overviews of research topics and completed studies.</p>
 </div>
 <div class="project-grid">
-    {% for project in collections.projects | reverse %}
+    {% for project in collections.research | reverse %}
     <a class="project-card" href="{{ project.url }}">
         <div class="project-card-thumb">
             {% if project.data.image %}
@@ -20,7 +20,7 @@ title: Projects · Imran Hossen
             <div class="tldr">{{ project.data.tldr }}</div>
             <div class="tags">
                 {% for tag in project.data.tags %}
-                    {% if tag != "projects" %}
+                    {% if tag != "research" %}
                     <span class="tag">{{ tag }}</span>
                     {% endif %}
                 {% endfor %}

@@ -11,7 +11,7 @@ for filename in os.listdir(src_dir):
         
         # Extract title
         title_match = re.search(r'<title>(.*?)</title>', content)
-        title = title_match.group(1) if title_match else "Frédéric Berdoz"
+        title = title_match.group(1) if title_match else "Imran Hossen"
 
         # Extract content inside <main><div class="container">
         # Using regex with DOTALL to match across newlines
@@ -20,9 +20,9 @@ for filename in os.listdir(src_dir):
         if main_match:
             inner_content = main_match.group(1).strip()
             
-            # Replace absolute asset paths from fberdoz.github.io to local /img/ or /css/
-            inner_content = inner_content.replace('https://fberdoz.github.io/img/', '/img/')
-            inner_content = inner_content.replace('https://fberdoz.github.io/css/', '/css/')
+            # Replace absolute asset paths from imrnh.github.io to local /img/ or /css/
+            inner_content = inner_content.replace('https://imrnh.github.io/img/', '/img/')
+            inner_content = inner_content.replace('https://imrnh.github.io/css/', '/css/')
             
             # Prepare frontmatter
             frontmatter = f"---\nlayout: base.njk\ntitle: {title}\n---\n\n"

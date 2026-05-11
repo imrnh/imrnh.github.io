@@ -21,8 +21,9 @@
                 <div class="nav-links" id="nav-links">
                     <a href="/" >Home</a>
                     <a href="/publications/" class="active">Publications</a>
-                    <a href="/teaching/" >Teaching</a>
                     <a href="/research/" >Research</a>
+                    <a href="/teaching/" >Teaching</a>
+                    <a href="/talks/" >Talks</a>
                     <a href="/projects/" >Projects</a>
                     <a href="/cv/" >CV</a>
                     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀</button>
@@ -33,7 +34,7 @@
             <div class="container">
                 <div class="article-header">
     <h1>Publications</h1>
-    <p class="text-dim">My research focuses on AI alignment and speech enhancement. Below is a list of my publications.</p>
+    <p class="text-dim">Below is a list of my publications.</p>
 </div>
 
 
@@ -45,13 +46,14 @@
         <div class="pub-meta"><strong>I. Hossen</strong>, K. S. Alam · ICCIT 2025</div>
         <div class="pub-badges">
             
-                <a class="pub-badge pub-badge--paper" href="https://arxiv.org/abs/..." target="_blank" rel="noopener">Paper</a>
+                <a class="pub-badge pub-badge--paper" href="https://ieeexplore.ieee.org/document/11491078" target="_blank" rel="noopener">Paper</a>
             
-            
-                <a class="pub-badge pub-badge--arxiv" href="https://arxiv.org/abs/..." target="_blank" rel="noopener">arXiv</a>
             
             
                 <a class="pub-badge pub-badge--project" href="/projects/f2hf/">Project</a>
+            
+            
+                <a class="pub-badge pub-badge--project" href="/research/f2hf/">Research Page</a>
             
             
                 <button class="pub-badge pub-badge--toggle" onclick="this.classList.toggle('active'),this.closest('.pub-card').querySelector('.pub-panel--abstract').classList.toggle('open')">Abstract</button>
@@ -70,12 +72,16 @@ attention map. We named this method F2HF (Feed-Forward Head Filtering Saliency G
         
         <div class="pub-panel pub-panel--bibtex">
             <div class="pub-bibtex-wrap">
-                <pre class="pub-bibtex"><code>@inproceedings{magistrali2026subliminal,
-  title={Subliminal Signals in Preference Labels},
-  author={Magistrali, I. and Berdoz, F. and Dauncey, S. and Wattenhofer, R.},
-  booktitle={Agents in the Wild Workshop @ ICLR},
-  year={2026}
-}
+                <pre class="pub-bibtex"><code>@INPROCEEDINGS{11491078,
+  author={Hossen, Imran and Alam, Kazi Saeed},
+  booktitle={2025 28th International Conference on Computer and Information Technology (ICCIT)}, 
+  title={F2HF: Feed-Forward Network as a Noisy Head Filter in Vision Transformer Explanations}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={2675-2680},
+  keywords={Satellite images;Earth Observing System;Feeds;Antennas;Radio broadcasting;Frequency modulation;Filtering;Filters;Circuits and systems;HTTP;interpretability;attention;feed-forward network},
+  doi={10.1109/ICCIT68739.2025.11491078}}
 </code></pre>
                 <button class="pub-copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(()=>{this.textContent='Copied!',setTimeout(()=>{this.textContent='Copy'},1500)})">Copy</button>
             </div>
@@ -108,7 +114,7 @@ attention map. We named this method F2HF (Feed-Forward Head Filtering Saliency G
                             d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z">
                         </path>
                     </svg>
-                    </a><a href="https://scholar.google.com/citations?user=27Ud3mIAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                    </a><a href="https://scholar.google.com/citations?user=ei2U1V4AAAAJ" title="Google Scholar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
                             <path d="M5.242 13.769.0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977.0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"></path>
                         </svg></a></div>
             </div>

@@ -894,15 +894,21 @@ main {
     align-items: center;
     gap: .4rem;
     font-family: var(--mono);
-    font-size: .82rem;
+    font-size: .75rem;
     font-weight: 500;
-    padding: .5rem 1rem;
-    border-radius: var(--radius);
+    padding: .35rem .75rem;
+    border-radius: 6px;
     border: 1px solid var(--border);
     color: var(--fg);
     background: var(--bg-card);
     text-decoration: none;
     transition: border-color .2s, background .2s, transform .15s
+}
+
+.project-btn svg {
+    fill: currentColor;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .project-btn:hover {
@@ -924,15 +930,41 @@ main {
     color: #fff
 }
 
-.project-btn--arxiv {
+.project-btn--arxiv, .project-btn--paper {
     border-color: #b31b1b;
     color: #b31b1b
 }
 
-.project-btn--arxiv:hover {
+.project-btn--arxiv:hover, .project-btn--paper:hover {
     background: #b31b1b;
     color: #fff;
     border-color: #b31b1b
+}
+
+.project-btn--github {
+    border-color: var(--fg-dim);
+    color: var(--fg);
+}
+
+.project-btn--github:hover {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+}
+
+.project-btn--hf {
+    border-color: #d97706; /* HuggingFace darker yellow/orange for light mode visibility */
+    color: #d97706;
+}
+[data-theme="dark"] .project-btn--hf {
+    border-color: #fbbf24; /* HuggingFace yellow for dark mode */
+    color: #fbbf24;
+}
+
+.project-btn--hf:hover {
+    background: #f59e0b;
+    color: #fff;
+    border-color: #f59e0b;
 }
 
 .project-body {
