@@ -930,12 +930,14 @@ main {
     color: #fff
 }
 
-.project-btn--arxiv, .project-btn--paper {
+.project-btn--arxiv,
+.project-btn--paper {
     border-color: #b31b1b;
     color: #b31b1b
 }
 
-.project-btn--arxiv:hover, .project-btn--paper:hover {
+.project-btn--arxiv:hover,
+.project-btn--paper:hover {
     background: #b31b1b;
     color: #fff;
     border-color: #b31b1b
@@ -953,11 +955,14 @@ main {
 }
 
 .project-btn--hf {
-    border-color: #d97706; /* HuggingFace darker yellow/orange for light mode visibility */
+    border-color: #d97706;
+    /* HuggingFace darker yellow/orange for light mode visibility */
     color: #d97706;
 }
+
 [data-theme="dark"] .project-btn--hf {
-    border-color: #fbbf24; /* HuggingFace yellow for dark mode */
+    border-color: #fbbf24;
+    /* HuggingFace yellow for dark mode */
     color: #fbbf24;
 }
 
@@ -1728,4 +1733,8 @@ main {
 
 .mb-2 {
     margin-bottom: 1rem
+}
+
+.container.container--wide {
+    max-width: 1000px;
 }

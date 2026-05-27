@@ -1,5 +1,6 @@
 ---
 layout: base.njk
+wide_layout: true
 ---
 <div class="project-header">
     <h1>{{ title }}</h1>
@@ -48,6 +49,9 @@ layout: base.njk
 {% if abstract %}
 <h2>Abstract</h2>
 <div class="pub-abstract" style="font-style:italic">{{ abstract | safe }}</div>
+{% elif description %}
+<h2>Description</h2>
+<div class="pub-abstract" style="font-style:italic">{{ description | safe }}</div>
 {% endif %}
 <div class="project-body">
     {{ content | safe }}
