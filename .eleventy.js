@@ -33,6 +33,22 @@ module.exports = function(eleventyConfig) {
     }));
   });
 
+  eleventyConfig.addFilter("sortProjects", (collection) => {
+    return [...collection].sort((a, b) => {
+      const aFeatured = a.data.featured ? 1 : 0;
+      const bFeatured = b.data.featured ? 1 : 0;
+      
+      if (aFeatured !== bFeatured) {
+        return bFeatured - aFeatured; // Featured first
+      }
+      
+      // Secondary sort: date descending
+      const aDate = a.date || 0;
+      const bDate = b.date || 0;
+      return bDate - aDate;
+    });
+  });
+
   return {
     dir: {
       input: "src",

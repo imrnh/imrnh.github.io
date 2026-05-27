@@ -1,6 +1,8 @@
 ---
 title: "Virtual Try-On Model with Mutual Self-Attention"
 subtitle: "Dual U-Net Diffusion Model"
+date: 2026-05-26
+featured: true
 image: "/img/vilt/1.png"
 tldr: "A two-stage, dual-U-Net diffusion model that transfers garments from product photos onto target people images using mutual self-attention."
 tags: ["generative-ai", "diffusion-models", "self-attention", "try-on"]

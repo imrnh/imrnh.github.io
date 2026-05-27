@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Classical Style Transfer Without Neural Networks</title>
+    <meta name="description" content="Personal website of Imran Hossen — Masters Research student at University College Dublin">
+    <link rel="icon" href="/img/research-portfolio-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj3FnGCnGkjhM0JEQXx2kFIQICxTKZeEBOp1MNYhOKkMnGGBpqBB1WYqb" crossorigin="anonymous">
+</head>
+<body>
+    <div class="site-wrapper">
+        <nav class="nav">
+            <div class="container"><a class="nav-brand" href="/">~/imrnh</a>
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span></button>
+                <div class="nav-links" id="nav-links">
+                    <a href="/" >Home</a>
+                    <a href="/publications/" >Publications</a>
+                    <a href="/research/" >Research</a>
+                    <a href="/teaching/" >Teaching</a>
+                    <a href="/talks/" >Talks</a>
+                    <a href="/projects/" >Projects</a>
+                    <a href="/cv/" >CV</a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀</button>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container container--wide">
+                <div class="project-header">
+    <h1>Classical Style Transfer Without Neural Networks</h1>
+    <p class="project-subtitle">Patch-based Texture Synthesis</p>
+    <p class="project-authors"><strong>Imran Hossen</strong></p>
+    <p class="project-affiliation">University College Dublin</p>
+    
+    <div class="tags">
+        
+            
+        
+             
+            <span class="tag">style-transfer</span>
+            
+        
+             
+            <span class="tag">classical-computer-vision</span>
+            
+        
+             
+            <span class="tag">texture-synthesis</span>
+            
+        
+             
+            <span class="tag">parallel-computing</span>
+            
+        
+    </div>
+    
+</div>
+
+<div class="project-actions">
+    
+    
+    
+    
+    <a class="project-btn project-btn--github" href="https://github.com/imrnh/classical_style_transfer" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        GitHub
+    </a>
+    
+</div>
+
+<hr>
+
+<h2>Description</h2>
+<div class="pub-abstract" style="font-style:italic">This project demonstrates image style transfer achieved entirely through classical image processing and non-parametric texture matching. Traditional neural style transfer relies on deep convolutional networks (such as VGG) to match content and style features. In contrast, this approach works purely by matching and replacing local image patches between a content image and a style image, transferring the local mean, variance, and texture statistics. It is implemented in Python and optimized for multi-core parallel execution.
+</div>
+
+<div class="project-body">
+    <h2>Overview</h2>
+<p>This project presents a non-parametric style transfer algorithm that blends a content image and a style image using patch-level pixel matching rather than deep neural network representations.</p>
+<figure>
+  <img src="/img/style-transfer/generated_output.png" alt="Generated Output Example">
+  <figcaption>Figure 1: Sample style transfer output generated using patch-based classical matching.</figcaption>
+</figure>
+<hr>
+<h2>Technical Concept</h2>
+<p>Unlike traditional neural style transfer (such as Gatys et al.) which uses intermediate activation maps of deep networks to separate and recombine content and style, this algorithm handles the transfer directly on the pixel space:</p>
+<ul>
+<li><strong>Content Representation:</strong> The spatial structures, edges, and objects layout are captured by the relative spatial positions of the patches in the content image.</li>
+<li><strong>Style Representation:</strong> The visual style—which consists of tone, contrast, sharpness, and local texture statistics—is captured by local statistical features (mean and standard deviation) of the style image.</li>
+</ul>
+<h3>Algorithm Intuition</h3>
+<p>By replacing each small local patch in the content image with a visually similar patch retrieved from the style image, we transfer the texture and styling of the style image while preserving the overall shapes and spatial boundaries of the content image. This approach is heavily inspired by classical <strong>non-parametric texture synthesis</strong> (Efros &amp; Leung) and <strong>statistical texture models</strong> (Portilla &amp; Simoncelli).</p>
+<hr>
+<h2>Parallel Execution &amp; Performance</h2>
+<p>Patch-matching algorithms can be computationally intensive when executed sequentially. This implementation is written in Python and supports multi-core parallel computing to speed up execution.</p>
+<h3>Usage</h3>
+<p>You can run the script specifying padding, stride, and whether to run in single-core or multi-core mode:</p>
+<pre><code class="language-bash">python main.py p 3 2
+</code></pre>
+<ul>
+<li><strong>Parameter 1 (<code>p</code> or <code>m</code>):</strong> Mode of operation. Specify <code>p</code> to allocate all available CPU cores in parallel, or <code>m</code> to run on a single core.</li>
+<li><strong>Parameter 2 (<code>3</code>):</strong> Padding size around patches.</li>
+<li><strong>Parameter 3 (<code>2</code>):</strong> Stride value for patch matching.</li>
+</ul>
+
+</div>
+
+
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container"><span>© 2026 Imran Hossen</span>
+                <div class="social-links"><a href="mailto:mail@imranhossen.org" title="Email"><svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1.0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1.0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
+                        </svg>
+                    </a><a href="https://github.com/imrnh" title="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                            <path d="M12 .3A12 12 0 008.2 23.7c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2.0.0 1-.3 3.3 1.2a11.5 11.5.0 016 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2.0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3"></path>
+                        </svg>
+                    </a><a href="https://www.linkedin.com/in/imrnh/" title="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                            <path d="M20.5 2h-17A1.5 1.5.0 002 3.5v17A1.5 1.5.0 003.5 22h17a1.5 1.5.0 001.5-1.5v-17A1.5 1.5.0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75.0 118.3 6.5 1.78 1.78.0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74.0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11.0 012.7-1.4c1.55.0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                    </a><a href="https://www.youtube.com/@imranhossennahid" title="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                        </svg>
+                    </a><a href="https://orcid.org/0009-0002-4749-3079" title="ORCID" target="_blank" rel="noopener"><svg
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z">
+                        </path>
+                    </svg>
+                    </a><a href="https://scholar.google.com/citations?user=ei2U1V4AAAAJ" title="Google Scholar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                            <path d="M5.242 13.769.0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977.0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"></path>
+                        </svg></a></div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

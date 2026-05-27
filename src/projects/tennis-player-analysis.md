@@ -1,6 +1,8 @@
 ---
 title: "Tennis Serve Extraction and Gameplay Analysis"
 subtitle: "Computer Vision & Deep Learning Pipeline"
+date: 2026-05-27
+featured: true
 image: "/img/tennis/project_demonstration.gif"
 tldr: "A multi-model deep learning pipeline to extract court keypoints, track players, analyze ball trajectories, and classify serve types in real-time."
 tags: ["computer-vision", "yolo", "transformers", "deep-learning"]
