@@ -4,8 +4,10 @@ authors: "**I. Hossen**, K. S. Alam"
 venue: "ICCIT 2025"
 date: 2025-12-19
 year: 2025
+demo_link: "https://interactive.imranhossen.org/f2hf/"
 paper_link: "https://ieeexplore.ieee.org/document/11491078"
-project_link: "/projects/f2hf/"
+google_colab_link: "https://colab.research.google.com/drive/1g3COlmYsBZJiDQUNkoW3fgxMu6--Cv5C?usp=sharing"
+# project_link: "/projects/f2hf/"
 research_link: "/research/f2hf/"
 bibtex: |
   @INPROCEEDINGS{11491078,

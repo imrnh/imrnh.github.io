@@ -17,8 +17,21 @@ wide_layout: true
     </div>
     {% endif %}
 </div>
-{% if arxiv_link or paper_link or github_link or hf_link %}
+{% set colab = google_colab_link or colab_link %}
+{% if demo_link or colab or arxiv_link or paper_link or github_link or hf_link %}
 <div class="project-actions">
+    {% if demo_link %}
+    <a class="project-btn project-btn--demo" href="{{ demo_link }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+        Demo
+    </a>
+    {% endif %}
+    {% if colab %}
+    <a class="project-btn project-btn--colab" href="{{ colab }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M16.941 7.971a3.72 3.72 0 0 0-3.593 2.781 3.73 3.73 0 0 0-4.018 0A3.72 3.72 0 0 0 5.738 7.97a3.738 3.738 0 1 0 3.593 4.757 3.73 3.73 0 0 0 4.018 0 3.738 3.738 0 1 0 3.592-4.757zM5.738 13.447a1.748 1.748 0 1 1 0-3.496 1.748 1.748 0 0 1 0 3.496zm11.203 0a1.748 1.748 0 1 1 0-3.496 1.748 1.748 0 0 1 0 3.496z"/></svg>
+        Google Colab
+    </a>
+    {% endif %}
     {% if arxiv_link %}
     <a class="project-btn project-btn--arxiv" href="{{ arxiv_link }}" target="_blank" rel="noopener">arXiv</a>
     {% endif %}

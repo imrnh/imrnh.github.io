@@ -23,6 +23,8 @@ tags: ["machine-learning", "computer-vision", "open-source"]
 
 # ACTION BUTTONS (Optional)
 # If you leave any of these blank or remove the line, the corresponding button will automatically hide.
+demo_link: "https://your-demo-url.com"         # Renders a red-to-blue gradient 'Demo' button (first button)
+google_colab_link: "https://colab.research.google.com/..." # Renders an orange 'Google Colab' button with logo (or colab_link)
 paper_link: "https://ieeexplore.ieee.org/..." # Renders a red 'Paper' button with document icon
 arxiv_link: "https://arxiv.org/abs/..."       # Renders a red 'arXiv' button
 github_link: "https://github.com/imrnh/..."   # Renders an outlined 'GitHub' button with logo

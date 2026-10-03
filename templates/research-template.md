@@ -23,6 +23,8 @@ tags: ["transformers", "attention", "efficiency"]
 
 # ACTION BUTTONS (Optional)
 # If you leave any of these blank or remove the line, the corresponding button will simply not render.
+demo_link: "https://your-demo-url.com"         # Red-to-blue gradient 'Demo' button (renders first)
+google_colab_link: "https://colab.research.google.com/..." # Orange 'Google Colab' button with logo (or colab_link)
 paper_link: "https://ieeexplore.ieee.org/..." # Red 'Paper' button with document icon
 arxiv_link: "https://arxiv.org/abs/..."       # Red 'arXiv' button
 github_link: "https://github.com/imrnh/..."   # Outline 'GitHub' button with logo

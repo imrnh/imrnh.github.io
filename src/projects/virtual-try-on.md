@@ -6,6 +6,7 @@ featured: true
 image: "/img/vilt/1.png"
 tldr: "A two-stage, dual-U-Net diffusion model that transfers garments from product photos onto target people images using mutual self-attention."
 tags: ["generative-ai", "diffusion-models", "self-attention", "try-on"]
+demo_link: "https://vilt.vercel.app"
 paper_link: ""
 arxiv_link: ""
 github_link: "https://github.com/imrnh/vilt"

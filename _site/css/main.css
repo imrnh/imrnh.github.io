@@ -762,6 +762,36 @@ main {
     text-decoration: none
 }
 
+.pub-badge--demo {
+    background: linear-gradient(135deg, #ef4444 0%, #3b82f6 100%);
+    color: #ffffff !important;
+    border-color: transparent;
+    font-weight: 600;
+}
+
+.pub-badge--demo:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #2563eb 100%);
+    color: #ffffff !important;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+.pub-badge--colab {
+    border-color: #ea580c;
+    color: #ea580c;
+}
+
+[data-theme="dark"] .pub-badge--colab {
+    border-color: #fb923c;
+    color: #fb923c;
+}
+
+.pub-badge--colab:hover {
+    background: #ea580c;
+    color: #fff;
+    border-color: #ea580c;
+}
+
 .pub-badge--paper {
     border-color: var(--accent);
     color: var(--accent)
@@ -916,6 +946,41 @@ main {
     color: var(--accent);
     text-decoration: none;
     transform: translateY(-1px)
+}
+
+.project-btn--demo {
+    background: linear-gradient(135deg, #ef4444 0%, #3b82f6 100%);
+    color: #ffffff !important;
+    border-color: transparent;
+    font-weight: 600;
+}
+
+.project-btn--demo svg {
+    fill: #ffffff;
+}
+
+.project-btn--demo:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #2563eb 100%);
+    color: #ffffff !important;
+    border-color: transparent;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+}
+
+.project-btn--colab {
+    border-color: #ea580c;
+    color: #ea580c;
+}
+
+[data-theme="dark"] .project-btn--colab {
+    border-color: #fb923c;
+    color: #fb923c;
+}
+
+.project-btn--colab:hover {
+    background: #ea580c;
+    color: #fff;
+    border-color: #ea580c;
 }
 
 .project-btn--primary {

@@ -17,6 +17,8 @@ year: 2026
 
 # LINKS AND BUTTONS (Optional)
 # Leave the string empty "" or omit the line entirely to hide the button.
+demo_link: "https://your-demo-url.com"             # Interactive demo link (renders first with red-blue gradient)
+google_colab_link: "https://colab.research.google.com/..." # Google Colab notebook link (or colab_link)
 paper_link: "https://ieeexplore.ieee.org/..."     # Official publisher link
 arxiv_link: "https://arxiv.org/abs/..."           # Preprint link
 project_link: "/projects/your-project-slug/"      # Internal link to your dynamic /projects/ page

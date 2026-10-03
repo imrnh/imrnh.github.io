@@ -15,6 +15,13 @@ title: Publications · Imran Hossen
         <h3 class="pub-title">{{ item.data.title }}</h3>
         <div class="pub-meta">{{ item.data.authors | markdown | safe }} · {{ item.data.venue }}</div>
         <div class="pub-badges">
+            {% if item.data.demo_link %}
+                <a class="pub-badge pub-badge--demo" href="{{ item.data.demo_link }}" target="_blank" rel="noopener">Demo</a>
+            {% endif %}
+            {% set colab = item.data.google_colab_link or item.data.colab_link %}
+            {% if colab %}
+                <a class="pub-badge pub-badge--colab" href="{{ colab }}" target="_blank" rel="noopener">Google Colab</a>
+            {% endif %}
             {% if item.data.paper_link %}
                 <a class="pub-badge pub-badge--paper" href="{{ item.data.paper_link }}" target="_blank" rel="noopener">Paper</a>
             {% endif %}

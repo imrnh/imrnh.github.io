@@ -7,6 +7,7 @@ image: "/img/tennis/project_demonstration.gif"
 tldr: "A multi-model deep learning pipeline to extract court keypoints, track players, analyze ball trajectories, and classify serve types in real-time."
 tags: ["computer-vision", "yolo", "transformers", "deep-learning"]
 paper_link: ""
+# demo_link: "https://interactive.imranhossen.org/f2hf/"
 arxiv_link: ""
 github_link: "https://github.com/imrnh/tennis_player_analysis"
 hf_link: ""
