@@ -25,6 +25,17 @@ bibtex: |
     keywords={Satellite images;Earth Observing System;Feeds;Antennas;Radio broadcasting;Frequency modulation;Filtering;Filters;Circuits and systems;HTTP;interpretability;attention;feed-forward network},
     doi={10.1109/ICCIT68739.2025.11491078}}
 ---
+
+<br>
+<br>
+
+# Key Contribution
+
+<font size ="+1"> When the <u>object is small</u> or hard to distinguish from the background, F2HF generates cleaner saliency maps than existing methods.</font>
+<br>
+<br>
+
+
 ## Problem
 When a neural network mades a decision, it is difficult to understand why that decision has been made. For example, if there is an images of a tiger and a cat (which both have highly similar facial structure and texture) and a vision model has decided the image to be cat, how would we know the model only focused on the features (i.e., structure and texture) of the cat and not on the features of the tiger? Interpretabiliy methods such as GradCAM, Integrated Gradients can be a tool to explore this question. However, in our experiments, these method seemed to not do good in cases where the object itself had very minimal presence in the overall image (e.g., the total image of 224 by 224 pixels but the object itself was present in 50 by 50 pixels) or when the object itself was difficult to distinguish from the background. Visual example of these 2 problems were added below.
 
