@@ -16,7 +16,7 @@
     --border: #27272a;
     --radius: 8px;
     --mono: 'JetBrains Mono', ui-monospace, monospace;
-    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --sans: "Google Sans", sans-serif, system-ui, -apple-system, sans-serif;
     --max-w: 780px
 }
 
@@ -347,20 +347,20 @@ main {
 .hero-photo-wrap {
     position: relative;
     width: 200px;
-    height: 260px
+    height: 230px
 }
 
 .hero-photo {
     position: relative;
     width: 200px;
-    height: 260px;
+    height: 230px;
     border-radius: var(--radius);
     object-fit: cover;
-    transition: transform .3s
+    transition: transform .23s
 }
 
 .hero-photo-wrap:hover .hero-photo {
-    transform: scale(1.03)
+    transform: scale(1.05)
 }
 
 .hero-greeting {
@@ -686,7 +686,7 @@ main {
 }
 
 .bio {
-    text-align: justify
+    text-align: left
 }
 
 .pub-year-section {
